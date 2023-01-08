@@ -1,0 +1,14 @@
+F:\Codes\VS\doancuoiki\bin\Debug\doancuoiki.exe.config
+F:\Codes\VS\doancuoiki\bin\Debug\doancuoiki.exe
+F:\Codes\VS\doancuoiki\bin\Debug\doancuoiki.pdb
+F:\Codes\VS\doancuoiki\obj\Debug\doancuoiki.csproj.AssemblyReference.cache
+F:\Codes\VS\doancuoiki\obj\Debug\doancuoiki.csproj.SuggestedBindingRedirects.cache
+F:\Codes\VS\doancuoiki\obj\Debug\doancuoiki.Form_main.resources
+F:\Codes\VS\doancuoiki\obj\Debug\doancuoiki.Form_lythuyet.resources
+F:\Codes\VS\doancuoiki\obj\Debug\doancuoiki.Form_luyentap.resources
+F:\Codes\VS\doancuoiki\obj\Debug\doancuoiki.Form_kiemtra.resources
+F:\Codes\VS\doancuoiki\obj\Debug\doancuoiki.Properties.Resources.resources
+F:\Codes\VS\doancuoiki\obj\Debug\doancuoiki.csproj.GenerateResource.cache
+F:\Codes\VS\doancuoiki\obj\Debug\doancuoiki.csproj.CoreCompileInputs.cache
+F:\Codes\VS\doancuoiki\obj\Debug\doancuoiki.exe
+F:\Codes\VS\doancuoiki\obj\Debug\doancuoiki.pdb
