@@ -12,3 +12,16 @@ F:\Codes\VS\doancuoiki\obj\Debug\doancuoiki.csproj.GenerateResource.cache
 F:\Codes\VS\doancuoiki\obj\Debug\doancuoiki.csproj.CoreCompileInputs.cache
 F:\Codes\VS\doancuoiki\obj\Debug\doancuoiki.exe
 F:\Codes\VS\doancuoiki\obj\Debug\doancuoiki.pdb
+C:\Users\tuanc\source\repos\heheducne\doancuoiki\bin\Debug\doancuoiki.exe.config
+C:\Users\tuanc\source\repos\heheducne\doancuoiki\bin\Debug\doancuoiki.exe
+C:\Users\tuanc\source\repos\heheducne\doancuoiki\bin\Debug\doancuoiki.pdb
+C:\Users\tuanc\source\repos\heheducne\doancuoiki\obj\Debug\doancuoiki.csproj.AssemblyReference.cache
+C:\Users\tuanc\source\repos\heheducne\doancuoiki\obj\Debug\doancuoiki.Form_main.resources
+C:\Users\tuanc\source\repos\heheducne\doancuoiki\obj\Debug\doancuoiki.Form_lythuyet.resources
+C:\Users\tuanc\source\repos\heheducne\doancuoiki\obj\Debug\doancuoiki.Form_luyentap.resources
+C:\Users\tuanc\source\repos\heheducne\doancuoiki\obj\Debug\doancuoiki.Form_kiemtra.resources
+C:\Users\tuanc\source\repos\heheducne\doancuoiki\obj\Debug\doancuoiki.Properties.Resources.resources
+C:\Users\tuanc\source\repos\heheducne\doancuoiki\obj\Debug\doancuoiki.csproj.GenerateResource.cache
+C:\Users\tuanc\source\repos\heheducne\doancuoiki\obj\Debug\doancuoiki.csproj.CoreCompileInputs.cache
+C:\Users\tuanc\source\repos\heheducne\doancuoiki\obj\Debug\doancuoiki.exe
+C:\Users\tuanc\source\repos\heheducne\doancuoiki\obj\Debug\doancuoiki.pdb

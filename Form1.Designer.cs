@@ -55,6 +55,7 @@
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
+            this.buttonExitAdd = new System.Windows.Forms.Button();
             this.panel_ho_va_ten.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.main_pictureBox_luyentap)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.main_pictureBox_lythuyet)).BeginInit();
@@ -88,7 +89,7 @@
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(92, 17);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(176, 22);
+            this.label4.Size = new System.Drawing.Size(185, 24);
             this.label4.TabIndex = 9;
             this.label4.Text = "Thông tin học sinh";
             // 
@@ -112,6 +113,7 @@
             this.main_comboBox_ho_va_ten.Name = "main_comboBox_ho_va_ten";
             this.main_comboBox_ho_va_ten.Size = new System.Drawing.Size(169, 24);
             this.main_comboBox_ho_va_ten.TabIndex = 6;
+            this.main_comboBox_ho_va_ten.SelectedIndexChanged += new System.EventHandler(this.main_comboBox_ho_va_ten_SelectedIndexChanged);
             // 
             // main_label_lop
             // 
@@ -120,7 +122,7 @@
             this.main_label_lop.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.main_label_lop.Location = new System.Drawing.Point(119, 147);
             this.main_label_lop.Name = "main_label_lop";
-            this.main_label_lop.Size = new System.Drawing.Size(37, 22);
+            this.main_label_lop.Size = new System.Drawing.Size(39, 24);
             this.main_label_lop.TabIndex = 5;
             this.main_label_lop.Text = "lớp";
             // 
@@ -131,7 +133,7 @@
             this.main_label_truong.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.main_label_truong.Location = new System.Drawing.Point(119, 103);
             this.main_label_truong.Name = "main_label_truong";
-            this.main_label_truong.Size = new System.Drawing.Size(67, 22);
+            this.main_label_truong.Size = new System.Drawing.Size(70, 24);
             this.main_label_truong.TabIndex = 4;
             this.main_label_truong.Text = "trường";
             // 
@@ -142,7 +144,7 @@
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(11, 147);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(49, 22);
+            this.label3.Size = new System.Drawing.Size(51, 24);
             this.label3.TabIndex = 2;
             this.label3.Text = "Lớp:";
             // 
@@ -153,7 +155,7 @@
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(11, 103);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(80, 22);
+            this.label2.Size = new System.Drawing.Size(84, 24);
             this.label2.TabIndex = 1;
             this.label2.Text = "Trường:";
             // 
@@ -164,7 +166,7 @@
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(11, 55);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(94, 22);
+            this.label1.Size = new System.Drawing.Size(99, 24);
             this.label1.TabIndex = 0;
             this.label1.Text = "Học sinh:";
             // 
@@ -185,6 +187,7 @@
             this.main_pictureBox_luyentap.BackColor = System.Drawing.Color.Transparent;
             this.main_pictureBox_luyentap.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("main_pictureBox_luyentap.BackgroundImage")));
             this.main_pictureBox_luyentap.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.main_pictureBox_luyentap.Cursor = System.Windows.Forms.Cursors.Hand;
             this.main_pictureBox_luyentap.Location = new System.Drawing.Point(133, 507);
             this.main_pictureBox_luyentap.Name = "main_pictureBox_luyentap";
             this.main_pictureBox_luyentap.Size = new System.Drawing.Size(100, 100);
@@ -197,6 +200,7 @@
             this.main_pictureBox_lythuyet.BackColor = System.Drawing.Color.Transparent;
             this.main_pictureBox_lythuyet.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("main_pictureBox_lythuyet.BackgroundImage")));
             this.main_pictureBox_lythuyet.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.main_pictureBox_lythuyet.Cursor = System.Windows.Forms.Cursors.Hand;
             this.main_pictureBox_lythuyet.Location = new System.Drawing.Point(572, 507);
             this.main_pictureBox_lythuyet.Name = "main_pictureBox_lythuyet";
             this.main_pictureBox_lythuyet.Size = new System.Drawing.Size(100, 100);
@@ -209,6 +213,7 @@
             this.main_pictureBox_kiemtra.BackColor = System.Drawing.Color.Transparent;
             this.main_pictureBox_kiemtra.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("main_pictureBox_kiemtra.BackgroundImage")));
             this.main_pictureBox_kiemtra.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.main_pictureBox_kiemtra.Cursor = System.Windows.Forms.Cursors.Hand;
             this.main_pictureBox_kiemtra.Location = new System.Drawing.Point(1016, 507);
             this.main_pictureBox_kiemtra.Name = "main_pictureBox_kiemtra";
             this.main_pictureBox_kiemtra.Size = new System.Drawing.Size(100, 100);
@@ -267,6 +272,7 @@
             this.main_panel_taohocsinhmoi.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("main_panel_taohocsinhmoi.BackgroundImage")));
             this.main_panel_taohocsinhmoi.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.main_panel_taohocsinhmoi.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.main_panel_taohocsinhmoi.Controls.Add(this.buttonExitAdd);
             this.main_panel_taohocsinhmoi.Controls.Add(this.main_textBox_lop);
             this.main_panel_taohocsinhmoi.Controls.Add(this.main_textBox_truong);
             this.main_panel_taohocsinhmoi.Controls.Add(this.main_textBox_ten);
@@ -309,7 +315,7 @@
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(92, 17);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(213, 22);
+            this.label5.Size = new System.Drawing.Size(225, 24);
             this.label5.TabIndex = 9;
             this.label5.Text = "Thông tin học sinh mới";
             // 
@@ -317,7 +323,7 @@
             // 
             this.main_button_taohocsinhmoi.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.main_button_taohocsinhmoi.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.main_button_taohocsinhmoi.Location = new System.Drawing.Point(164, 182);
+            this.main_button_taohocsinhmoi.Location = new System.Drawing.Point(214, 177);
             this.main_button_taohocsinhmoi.Name = "main_button_taohocsinhmoi";
             this.main_button_taohocsinhmoi.Size = new System.Drawing.Size(150, 37);
             this.main_button_taohocsinhmoi.TabIndex = 8;
@@ -332,7 +338,7 @@
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.Location = new System.Drawing.Point(11, 147);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(49, 22);
+            this.label12.Size = new System.Drawing.Size(51, 24);
             this.label12.TabIndex = 2;
             this.label12.Text = "Lớp:";
             // 
@@ -343,7 +349,7 @@
             this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.Location = new System.Drawing.Point(11, 103);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(80, 22);
+            this.label13.Size = new System.Drawing.Size(84, 24);
             this.label13.TabIndex = 1;
             this.label13.Text = "Trường:";
             // 
@@ -354,9 +360,21 @@
             this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label14.Location = new System.Drawing.Point(11, 55);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(94, 22);
+            this.label14.Size = new System.Drawing.Size(99, 24);
             this.label14.TabIndex = 0;
             this.label14.Text = "Học sinh:";
+            // 
+            // buttonExitAdd
+            // 
+            this.buttonExitAdd.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.buttonExitAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonExitAdd.Location = new System.Drawing.Point(96, 177);
+            this.buttonExitAdd.Name = "buttonExitAdd";
+            this.buttonExitAdd.Size = new System.Drawing.Size(86, 37);
+            this.buttonExitAdd.TabIndex = 13;
+            this.buttonExitAdd.Text = "Thoát";
+            this.buttonExitAdd.UseVisualStyleBackColor = false;
+            this.buttonExitAdd.Click += new System.EventHandler(this.buttonExitAdd_Click);
             // 
             // Form_main
             // 
@@ -378,6 +396,7 @@
             this.Controls.Add(this.panel_ho_va_ten);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form_main";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "App dạy học toán lớp 5";
             this.panel_ho_va_ten.ResumeLayout(false);
             this.panel_ho_va_ten.PerformLayout();
@@ -420,6 +439,7 @@
         private System.Windows.Forms.TextBox main_textBox_lop;
         private System.Windows.Forms.TextBox main_textBox_truong;
         private System.Windows.Forms.TextBox main_textBox_ten;
+        private System.Windows.Forms.Button buttonExitAdd;
     }
 }
 
