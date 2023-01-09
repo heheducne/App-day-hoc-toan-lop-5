@@ -14,6 +14,7 @@ namespace doancuoiki
     public partial class Form_main : Form
     {
         DataProvider provider = new DataProvider();
+        Form_lythuyet f1 = new Form_lythuyet();
         public Form_main()
         {
             InitializeComponent();
@@ -59,7 +60,6 @@ namespace doancuoiki
         private void main_pictureBox_lythuyet_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Form_lythuyet f1 = new Form_lythuyet();
             f1.ShowDialog();
             this.Show();
         }
