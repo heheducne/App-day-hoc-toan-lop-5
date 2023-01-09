@@ -16,5 +16,12 @@ namespace doancuoiki
         {
             InitializeComponent();
         }
+
+        private void lythuyet_pictureBox_back_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form_main f1 = new Form_main();
+            f1.ShowDialog();
+        }
     }
 }

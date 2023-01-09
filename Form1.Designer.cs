@@ -47,6 +47,7 @@
             this.label9 = new System.Windows.Forms.Label();
             this.main_pictureBox_info = new System.Windows.Forms.PictureBox();
             this.main_panel_taohocsinhmoi = new System.Windows.Forms.Panel();
+            this.buttonExitAdd = new System.Windows.Forms.Button();
             this.main_textBox_lop = new System.Windows.Forms.TextBox();
             this.main_textBox_truong = new System.Windows.Forms.TextBox();
             this.main_textBox_ten = new System.Windows.Forms.TextBox();
@@ -55,7 +56,6 @@
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
-            this.buttonExitAdd = new System.Windows.Forms.Button();
             this.panel_ho_va_ten.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.main_pictureBox_luyentap)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.main_pictureBox_lythuyet)).BeginInit();
@@ -89,7 +89,7 @@
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(92, 17);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(185, 24);
+            this.label4.Size = new System.Drawing.Size(176, 22);
             this.label4.TabIndex = 9;
             this.label4.Text = "Thông tin học sinh";
             // 
@@ -122,7 +122,7 @@
             this.main_label_lop.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.main_label_lop.Location = new System.Drawing.Point(119, 147);
             this.main_label_lop.Name = "main_label_lop";
-            this.main_label_lop.Size = new System.Drawing.Size(39, 24);
+            this.main_label_lop.Size = new System.Drawing.Size(37, 22);
             this.main_label_lop.TabIndex = 5;
             this.main_label_lop.Text = "lớp";
             // 
@@ -133,7 +133,7 @@
             this.main_label_truong.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.main_label_truong.Location = new System.Drawing.Point(119, 103);
             this.main_label_truong.Name = "main_label_truong";
-            this.main_label_truong.Size = new System.Drawing.Size(70, 24);
+            this.main_label_truong.Size = new System.Drawing.Size(67, 22);
             this.main_label_truong.TabIndex = 4;
             this.main_label_truong.Text = "trường";
             // 
@@ -144,7 +144,7 @@
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(11, 147);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(51, 24);
+            this.label3.Size = new System.Drawing.Size(49, 22);
             this.label3.TabIndex = 2;
             this.label3.Text = "Lớp:";
             // 
@@ -155,7 +155,7 @@
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(11, 103);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(84, 24);
+            this.label2.Size = new System.Drawing.Size(80, 22);
             this.label2.TabIndex = 1;
             this.label2.Text = "Trường:";
             // 
@@ -166,7 +166,7 @@
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(11, 55);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(99, 24);
+            this.label1.Size = new System.Drawing.Size(94, 22);
             this.label1.TabIndex = 0;
             this.label1.Text = "Học sinh:";
             // 
@@ -219,6 +219,7 @@
             this.main_pictureBox_kiemtra.Size = new System.Drawing.Size(100, 100);
             this.main_pictureBox_kiemtra.TabIndex = 4;
             this.main_pictureBox_kiemtra.TabStop = false;
+            this.main_pictureBox_kiemtra.Click += new System.EventHandler(this.main_pictureBox_kiemtra_Click);
             // 
             // label7
             // 
@@ -238,11 +239,12 @@
             this.label8.BackColor = System.Drawing.Color.Black;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.Yellow;
-            this.label8.Location = new System.Drawing.Point(97, 435);
+            this.label8.Location = new System.Drawing.Point(135, 384);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(270, 51);
+            this.label8.Size = new System.Drawing.Size(205, 102);
             this.label8.TabIndex = 6;
-            this.label8.Text = "LUYỆN TẬP";
+            this.label8.Text = "THI THỬ\r\n45 PHÚT";
+            this.label8.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // label9
             // 
@@ -250,11 +252,12 @@
             this.label9.BackColor = System.Drawing.Color.Black;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.Yellow;
-            this.label9.Location = new System.Drawing.Point(879, 435);
+            this.label9.Location = new System.Drawing.Point(885, 384);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(233, 51);
+            this.label9.Size = new System.Drawing.Size(262, 102);
             this.label9.TabIndex = 7;
-            this.label9.Text = "KIỂM TRA";
+            this.label9.Text = "KIỂM TRA\r\nKIẾN THỨC";
+            this.label9.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // main_pictureBox_info
             // 
@@ -287,6 +290,18 @@
             this.main_panel_taohocsinhmoi.TabIndex = 10;
             this.main_panel_taohocsinhmoi.Visible = false;
             // 
+            // buttonExitAdd
+            // 
+            this.buttonExitAdd.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.buttonExitAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonExitAdd.Location = new System.Drawing.Point(96, 177);
+            this.buttonExitAdd.Name = "buttonExitAdd";
+            this.buttonExitAdd.Size = new System.Drawing.Size(86, 37);
+            this.buttonExitAdd.TabIndex = 13;
+            this.buttonExitAdd.Text = "Thoát";
+            this.buttonExitAdd.UseVisualStyleBackColor = false;
+            this.buttonExitAdd.Click += new System.EventHandler(this.buttonExitAdd_Click);
+            // 
             // main_textBox_lop
             // 
             this.main_textBox_lop.Location = new System.Drawing.Point(130, 149);
@@ -315,7 +330,7 @@
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(92, 17);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(225, 24);
+            this.label5.Size = new System.Drawing.Size(213, 22);
             this.label5.TabIndex = 9;
             this.label5.Text = "Thông tin học sinh mới";
             // 
@@ -338,7 +353,7 @@
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.Location = new System.Drawing.Point(11, 147);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(51, 24);
+            this.label12.Size = new System.Drawing.Size(49, 22);
             this.label12.TabIndex = 2;
             this.label12.Text = "Lớp:";
             // 
@@ -349,7 +364,7 @@
             this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.Location = new System.Drawing.Point(11, 103);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(84, 24);
+            this.label13.Size = new System.Drawing.Size(80, 22);
             this.label13.TabIndex = 1;
             this.label13.Text = "Trường:";
             // 
@@ -360,26 +375,15 @@
             this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label14.Location = new System.Drawing.Point(11, 55);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(99, 24);
+            this.label14.Size = new System.Drawing.Size(94, 22);
             this.label14.TabIndex = 0;
             this.label14.Text = "Học sinh:";
-            // 
-            // buttonExitAdd
-            // 
-            this.buttonExitAdd.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.buttonExitAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonExitAdd.Location = new System.Drawing.Point(96, 177);
-            this.buttonExitAdd.Name = "buttonExitAdd";
-            this.buttonExitAdd.Size = new System.Drawing.Size(86, 37);
-            this.buttonExitAdd.TabIndex = 13;
-            this.buttonExitAdd.Text = "Thoát";
-            this.buttonExitAdd.UseVisualStyleBackColor = false;
-            this.buttonExitAdd.Click += new System.EventHandler(this.buttonExitAdd_Click);
             // 
             // Form_main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
             this.BackColor = System.Drawing.Color.DarkGreen;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;

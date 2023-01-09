@@ -81,5 +81,12 @@ namespace doancuoiki
             main_label_lop.Text = dt[3].ToString();
             main_label_truong.Text = dt[2].ToString();
         }
+
+        private void main_pictureBox_kiemtra_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form_kiemtra f1 = new Form_kiemtra();
+            f1.ShowDialog();
+        }
     }
 }
