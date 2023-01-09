@@ -310,7 +310,7 @@
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.Gold;
-            this.label6.Location = new System.Drawing.Point(669, 61);
+            this.label6.Location = new System.Drawing.Point(758, 64);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(486, 91);
             this.label6.TabIndex = 2;
@@ -321,7 +321,7 @@
             this.lythuyet_pictureBox_back.BackColor = System.Drawing.Color.Transparent;
             this.lythuyet_pictureBox_back.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("lythuyet_pictureBox_back.BackgroundImage")));
             this.lythuyet_pictureBox_back.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.lythuyet_pictureBox_back.Location = new System.Drawing.Point(1161, 0);
+            this.lythuyet_pictureBox_back.Location = new System.Drawing.Point(1281, 5);
             this.lythuyet_pictureBox_back.Name = "lythuyet_pictureBox_back";
             this.lythuyet_pictureBox_back.Size = new System.Drawing.Size(100, 100);
             this.lythuyet_pictureBox_back.TabIndex = 8;
@@ -398,7 +398,7 @@
             this.lythuyet_panel_list.Controls.Add(this.label2);
             this.lythuyet_panel_list.Location = new System.Drawing.Point(0, 0);
             this.lythuyet_panel_list.Name = "lythuyet_panel_list";
-            this.lythuyet_panel_list.Size = new System.Drawing.Size(555, 680);
+            this.lythuyet_panel_list.Size = new System.Drawing.Size(558, 754);
             this.lythuyet_panel_list.TabIndex = 9;
             // 
             // label10
@@ -817,7 +817,7 @@
             // 
             this.label52.AutoSize = true;
             this.label52.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label52.Location = new System.Drawing.Point(26, 3727);
+            this.label52.Location = new System.Drawing.Point(11, 3727);
             this.label52.Name = "label52";
             this.label52.Size = new System.Drawing.Size(469, 58);
             this.label52.TabIndex = 53;
@@ -2248,9 +2248,9 @@
             this.lythuyet_panel_noidung.AutoScroll = true;
             this.lythuyet_panel_noidung.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lythuyet_panel_noidung.Controls.Add(this.lythuyet_label_noidung);
-            this.lythuyet_panel_noidung.Location = new System.Drawing.Point(561, 199);
+            this.lythuyet_panel_noidung.Location = new System.Drawing.Point(564, 222);
             this.lythuyet_panel_noidung.Name = "lythuyet_panel_noidung";
-            this.lythuyet_panel_noidung.Size = new System.Drawing.Size(700, 481);
+            this.lythuyet_panel_noidung.Size = new System.Drawing.Size(806, 531);
             this.lythuyet_panel_noidung.TabIndex = 10;
             // 
             // lythuyet_label_noidung
@@ -2258,17 +2258,17 @@
             this.lythuyet_label_noidung.AutoSize = true;
             this.lythuyet_label_noidung.Location = new System.Drawing.Point(11, 22);
             this.lythuyet_label_noidung.Name = "lythuyet_label_noidung";
-            this.lythuyet_label_noidung.Size = new System.Drawing.Size(1109, 2400);
+            this.lythuyet_label_noidung.Size = new System.Drawing.Size(37, 16);
             this.lythuyet_label_noidung.TabIndex = 0;
-            this.lythuyet_label_noidung.Text = resources.GetString("lythuyet_label_noidung.Text");
+            this.lythuyet_label_noidung.Text = "hehe";
             // 
             // lythuyet_button_danhdau
             // 
             this.lythuyet_button_danhdau.BackColor = System.Drawing.Color.Chartreuse;
             this.lythuyet_button_danhdau.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lythuyet_button_danhdau.Location = new System.Drawing.Point(1161, 158);
+            this.lythuyet_button_danhdau.Location = new System.Drawing.Point(579, 181);
             this.lythuyet_button_danhdau.Name = "lythuyet_button_danhdau";
-            this.lythuyet_button_danhdau.Size = new System.Drawing.Size(91, 35);
+            this.lythuyet_button_danhdau.Size = new System.Drawing.Size(110, 35);
             this.lythuyet_button_danhdau.TabIndex = 11;
             this.lythuyet_button_danhdau.Text = "Đánh dấu";
             this.lythuyet_button_danhdau.UseVisualStyleBackColor = false;
@@ -2279,7 +2279,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1257, 678);
+            this.ClientSize = new System.Drawing.Size(1382, 753);
             this.Controls.Add(this.lythuyet_button_danhdau);
             this.Controls.Add(this.lythuyet_panel_noidung);
             this.Controls.Add(this.lythuyet_panel_list);
