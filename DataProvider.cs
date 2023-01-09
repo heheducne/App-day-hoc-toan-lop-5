@@ -10,8 +10,8 @@ namespace doancuoiki
 {
     public class DataProvider
     {
-        private string connectionStr = @"Data Source=TUANC;Initial Catalog=LEARNING;Integrated Security=True";
-        //private string connectionStr = @"Data Source=FASTSHJTDUCK;Initial Catalog=LEARNING;Integrated Security=True";
+        //private string connectionStr = @"Data Source=TUANC;Initial Catalog=LEARNING;Integrated Security=True";
+        private string connectionStr = @"Data Source=FASTSHJTDUCK;Initial Catalog=LEARNING;Integrated Security=True";
         public DataTable excuteQuery(string query)
         {
             DataTable data = new DataTable();
