@@ -87,6 +87,7 @@ namespace doancuoiki
             this.Hide();
             Form_kiemtra f1 = new Form_kiemtra();
             f1.ShowDialog();
+            this.Show();
         }
     }
 }
