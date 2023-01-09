@@ -311,7 +311,7 @@
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.Gold;
-            this.label6.Location = new System.Drawing.Point(758, 64);
+            this.label6.Location = new System.Drawing.Point(883, 60);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(486, 91);
             this.label6.TabIndex = 2;
@@ -322,7 +322,7 @@
             this.lythuyet_pictureBox_back.BackColor = System.Drawing.Color.Transparent;
             this.lythuyet_pictureBox_back.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("lythuyet_pictureBox_back.BackgroundImage")));
             this.lythuyet_pictureBox_back.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.lythuyet_pictureBox_back.Location = new System.Drawing.Point(1281, 5);
+            this.lythuyet_pictureBox_back.Location = new System.Drawing.Point(1479, 10);
             this.lythuyet_pictureBox_back.Name = "lythuyet_pictureBox_back";
             this.lythuyet_pictureBox_back.Size = new System.Drawing.Size(100, 100);
             this.lythuyet_pictureBox_back.TabIndex = 8;
@@ -399,7 +399,7 @@
             this.lythuyet_panel_list.Controls.Add(this.label2);
             this.lythuyet_panel_list.Location = new System.Drawing.Point(0, 0);
             this.lythuyet_panel_list.Name = "lythuyet_panel_list";
-            this.lythuyet_panel_list.Size = new System.Drawing.Size(558, 754);
+            this.lythuyet_panel_list.Size = new System.Drawing.Size(594, 754);
             this.lythuyet_panel_list.TabIndex = 9;
             // 
             // label10
@@ -407,7 +407,7 @@
             this.label10.AutoSize = true;
             this.label10.Location = new System.Drawing.Point(249, 4846);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(0, 17);
+            this.label10.Size = new System.Drawing.Size(0, 16);
             this.label10.TabIndex = 70;
             // 
             // panel51
@@ -2248,7 +2248,7 @@
             // 
             this.lythuyet_button_danhdau.BackColor = System.Drawing.Color.Chartreuse;
             this.lythuyet_button_danhdau.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lythuyet_button_danhdau.Location = new System.Drawing.Point(579, 181);
+            this.lythuyet_button_danhdau.Location = new System.Drawing.Point(657, 116);
             this.lythuyet_button_danhdau.Name = "lythuyet_button_danhdau";
             this.lythuyet_button_danhdau.Size = new System.Drawing.Size(110, 35);
             this.lythuyet_button_danhdau.TabIndex = 11;
@@ -2259,9 +2259,9 @@
             // 
             this.flowLayoutPanel1.AutoScroll = true;
             this.flowLayoutPanel1.Controls.Add(this.pictureBox1);
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(564, 222);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(618, 157);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(806, 532);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(952, 597);
             this.flowLayoutPanel1.TabIndex = 12;
             // 
             // pictureBox1
@@ -2280,14 +2280,18 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1382, 753);
+            this.ClientSize = new System.Drawing.Size(1582, 753);
             this.Controls.Add(this.flowLayoutPanel1);
             this.Controls.Add(this.lythuyet_button_danhdau);
             this.Controls.Add(this.lythuyet_panel_list);
             this.Controls.Add(this.lythuyet_pictureBox_back);
             this.Controls.Add(this.label6);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximumSize = new System.Drawing.Size(1600, 800);
+            this.MinimizeBox = false;
+            this.MinimumSize = new System.Drawing.Size(1600, 800);
             this.Name = "Form_lythuyet";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Lý thuyết";
             ((System.ComponentModel.ISupportInitialize)(this.lythuyet_pictureBox_back)).EndInit();
             this.lythuyet_panel_list.ResumeLayout(false);
