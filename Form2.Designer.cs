@@ -920,9 +920,9 @@
             this.label48.ForeColor = System.Drawing.Color.RoyalBlue;
             this.label48.Location = new System.Drawing.Point(3, 11);
             this.label48.Name = "label48";
-            this.label48.Size = new System.Drawing.Size(415, 50);
+            this.label48.Size = new System.Drawing.Size(341, 50);
             this.label48.TabIndex = 2;
-            this.label48.Text = "Thể tích của một hình.\r\nXăng - ti - mét khối. Đề - xi - mét khối. Mét khối";
+            this.label48.Text = "Thể tích của một hình. Mét khối.\r\nXăng - ti - mét khối. Đề - xi - mét khối. ";
             // 
             // panel37
             // 
@@ -1270,9 +1270,9 @@
             this.label37.ForeColor = System.Drawing.Color.RoyalBlue;
             this.label37.Location = new System.Drawing.Point(3, 11);
             this.label37.Name = "label37";
-            this.label37.Size = new System.Drawing.Size(400, 25);
+            this.label37.Size = new System.Drawing.Size(208, 50);
             this.label37.TabIndex = 2;
-            this.label37.Text = "Chia một số thập phân cho một số thập phân";
+            this.label37.Text = "Chia một số thập phân\r\ncho một số thập phân";
             // 
             // panel27
             // 
@@ -1304,9 +1304,9 @@
             this.label36.ForeColor = System.Drawing.Color.RoyalBlue;
             this.label36.Location = new System.Drawing.Point(3, 11);
             this.label36.Name = "label36";
-            this.label36.Size = new System.Drawing.Size(382, 25);
+            this.label36.Size = new System.Drawing.Size(199, 50);
             this.label36.TabIndex = 2;
-            this.label36.Text = "Chia một số tự nhiên cho một số thập phân";
+            this.label36.Text = "Chia một số tự nhiên\r\ncho một số thập phân";
             // 
             // panel26
             // 
@@ -1372,9 +1372,9 @@
             this.label34.ForeColor = System.Drawing.Color.RoyalBlue;
             this.label34.Location = new System.Drawing.Point(3, 11);
             this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(394, 25);
+            this.label34.Size = new System.Drawing.Size(208, 50);
             this.label34.TabIndex = 2;
-            this.label34.Text = "Chia một số thập phân cho 10, 100, 1000, ...";
+            this.label34.Text = "Chia một số thập phân\r\ncho 10, 100, 1000, ...";
             // 
             // panel24
             // 
@@ -1406,9 +1406,9 @@
             this.label33.ForeColor = System.Drawing.Color.RoyalBlue;
             this.label33.Location = new System.Drawing.Point(3, 11);
             this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(382, 25);
+            this.label33.Size = new System.Drawing.Size(208, 50);
             this.label33.TabIndex = 2;
-            this.label33.Text = "Chia một số thập phân cho một số tự nhiên";
+            this.label33.Text = "Chia một số thập phân\r\ncho một số tự nhiên";
             // 
             // panel23
             // 
@@ -1440,9 +1440,9 @@
             this.label32.ForeColor = System.Drawing.Color.RoyalBlue;
             this.label32.Location = new System.Drawing.Point(3, 11);
             this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(399, 25);
+            this.label32.Size = new System.Drawing.Size(214, 50);
             this.label32.TabIndex = 2;
-            this.label32.Text = "Nhân một số thập phân với một số thập phân";
+            this.label32.Text = "Nhân một số thập phân\r\nvới một số thập phân";
             // 
             // panel22
             // 
@@ -1474,9 +1474,9 @@
             this.label31.ForeColor = System.Drawing.Color.RoyalBlue;
             this.label31.Location = new System.Drawing.Point(3, 11);
             this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(393, 25);
+            this.label31.Size = new System.Drawing.Size(214, 50);
             this.label31.TabIndex = 2;
-            this.label31.Text = "Nhân một số thập phân với 10, 100, 1000, ...";
+            this.label31.Text = "Nhân một số thập phân\r\nvới 10, 100, 1000, ...";
             // 
             // panel21
             // 
@@ -1508,9 +1508,9 @@
             this.label30.ForeColor = System.Drawing.Color.RoyalBlue;
             this.label30.Location = new System.Drawing.Point(3, 11);
             this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(381, 25);
+            this.label30.Size = new System.Drawing.Size(214, 50);
             this.label30.TabIndex = 2;
-            this.label30.Text = "Nhân một số thập phân với một số tự nhiên";
+            this.label30.Text = "Nhân một số thập phân\r\nvới một số tự nhiên";
             // 
             // panel20
             // 
@@ -1660,9 +1660,9 @@
             this.label22.ForeColor = System.Drawing.Color.RoyalBlue;
             this.label22.Location = new System.Drawing.Point(3, 11);
             this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(421, 25);
+            this.label22.Size = new System.Drawing.Size(216, 50);
             this.label22.TabIndex = 2;
-            this.label22.Text = "Viết các số đo diện tích dưới dạng số thập phân";
+            this.label22.Text = "Viết các số đo diện tích\r\ndưới dạng số thập phân";
             // 
             // panel17
             // 
@@ -1694,9 +1694,9 @@
             this.label21.ForeColor = System.Drawing.Color.RoyalBlue;
             this.label21.Location = new System.Drawing.Point(3, 11);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(438, 25);
+            this.label21.Size = new System.Drawing.Size(229, 50);
             this.label21.TabIndex = 2;
-            this.label21.Text = "Viết các số đo khối lượng dưới dạng số thập phân";
+            this.label21.Text = "Viết các số đo khối lượng\r\ndưới dạng số thập phân";
             // 
             // panel16
             // 
@@ -1728,9 +1728,9 @@
             this.label20.ForeColor = System.Drawing.Color.RoyalBlue;
             this.label20.Location = new System.Drawing.Point(3, 11);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(402, 25);
+            this.label20.Size = new System.Drawing.Size(216, 50);
             this.label20.TabIndex = 2;
-            this.label20.Text = "Viết các số đo độ dài dưới dạng số thập phân";
+            this.label20.Text = "Viết các số đo độ dài\r\ndưới dạng số thập phân";
             // 
             // panel15
             // 
