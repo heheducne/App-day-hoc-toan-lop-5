@@ -108,6 +108,9 @@ namespace doancuoiki
             main_pictureBox_bear1.Visible = true;
             main_pictureBox_bear2.Visible = true;
             main_pictureBox_bear3.Visible = true;
+
+            main_pictureBox_user.Visible = true;
+
         }
 
         private void main_pictureBox_start_Click(object sender, EventArgs e)

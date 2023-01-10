@@ -199,11 +199,11 @@
             // 
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.Transparent;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 79.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.Gold;
-            this.label6.Location = new System.Drawing.Point(286, 35);
+            this.label6.Location = new System.Drawing.Point(224, 22);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(1074, 135);
+            this.label6.Size = new System.Drawing.Size(1187, 152);
             this.label6.TabIndex = 1;
             this.label6.Text = "HỌC TOÁN LỚP 5";
             // 
@@ -420,7 +420,7 @@
             this.main_pictureBox_user.BackColor = System.Drawing.Color.Transparent;
             this.main_pictureBox_user.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("main_pictureBox_user.BackgroundImage")));
             this.main_pictureBox_user.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.main_pictureBox_user.Location = new System.Drawing.Point(-5, 0);
+            this.main_pictureBox_user.Location = new System.Drawing.Point(12, 12);
             this.main_pictureBox_user.Name = "main_pictureBox_user";
             this.main_pictureBox_user.Size = new System.Drawing.Size(100, 100);
             this.main_pictureBox_user.TabIndex = 11;
@@ -450,6 +450,7 @@
             this.main_pictureBox_bear1.Size = new System.Drawing.Size(335, 322);
             this.main_pictureBox_bear1.TabIndex = 13;
             this.main_pictureBox_bear1.TabStop = false;
+            this.main_pictureBox_bear1.Visible = false;
             // 
             // main_pictureBox_bear2
             // 
@@ -461,6 +462,7 @@
             this.main_pictureBox_bear2.Size = new System.Drawing.Size(335, 322);
             this.main_pictureBox_bear2.TabIndex = 14;
             this.main_pictureBox_bear2.TabStop = false;
+            this.main_pictureBox_bear2.Visible = false;
             // 
             // main_pictureBox_bear3
             // 
@@ -472,6 +474,7 @@
             this.main_pictureBox_bear3.Size = new System.Drawing.Size(335, 322);
             this.main_pictureBox_bear3.TabIndex = 15;
             this.main_pictureBox_bear3.TabStop = false;
+            this.main_pictureBox_bear3.Visible = false;
             // 
             // Form_main
             // 
