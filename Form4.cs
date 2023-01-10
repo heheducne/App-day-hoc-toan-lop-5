@@ -13,7 +13,7 @@ namespace doancuoiki
 {
     public partial class Form_kiemtra : Form
     {
-        int num_ques = 1;
+
         public Form_kiemtra()
         {
             InitializeComponent();
@@ -36,16 +36,11 @@ namespace doancuoiki
             }
         }
         //kiem tra cac nut da duoc bam chua
-        int flag_tracnghiem;
-        int flag_hotro;
+        int num_ques = 1;
         int flag_chuong = 0;
         private void Form_kiemtra_Load(object sender, EventArgs e)
         {
-            flag_tracnghiem = 0;
-            flag_hotro = 0;
             flag_chuong = 0;
- 
-            ktra_button_tracnghiem.BackColor = Color.Green;
             ktra_button_chuong1.BackColor = Color.Green;
             ktra_button_chuong2.BackColor = Color.Green;
             ktra_button_chuong3.BackColor = Color.Green;
@@ -63,7 +58,7 @@ namespace doancuoiki
         private void ktra_button_batdaulambai_Click(object sender, EventArgs e)
         {
             //kiem tra user da chon du 2 been chua (hinh thuc + chuong)
-            if((flag_tracnghiem == 0) || (flag_chuong == 0))
+            if((flag_chuong == 0))
             {
                 MessageBox.Show("Vui chon day du hinh thuc va chuong ma ban muon kiem tra");
             }
@@ -76,6 +71,7 @@ namespace doancuoiki
                 ktra_label_chuong.Visible = true;
                 ktra_pictureBox2.Visible = true;
                 ktra_label_cogoiy.Visible = false;
+                flowLayoutPanel1.Visible = false;
             }
 
         }
@@ -85,20 +81,12 @@ namespace doancuoiki
             radioButtonB.Checked = false;
             radioButtonC.Checked = false;
             radioButtonD.Checked = false;
+            flowLayoutPanel1.Visible = true;
             string path = Application.StartupPath+"\\LuyenTap\\Chuong"+flag_chuong.ToString()+"\\Cau"+tmp.ToString();
             Bitmap pic = new Bitmap(path + "\\ques.png"); pictureBoxQues.Image = pic;
             Bitmap pic1 = new Bitmap(path + "\\ans.png"); pictureBoxAns.Image = pic1;
-            Bitmap pic2 = new Bitmap(path + "\\hint.png"); pictureBoxQues.Image = pic2;
+            Bitmap pic2 = new Bitmap(path + "\\hint.png"); pictureBoxHint.Image = pic2;
 
-        }
-        private void ktra_button_tracnghiem_Click(object sender, EventArgs e)
-        {
-            if(flag_tracnghiem == 0)
-            { 
-                ktra_button_tracnghiem.BackColor = Color.Red;
-                flag_tracnghiem = 1;
-                ktra_label_conclude.Visible = true;
-            }
         }
 
         private void ktra_button_chuong1_Click(object sender, EventArgs e)
@@ -204,21 +192,6 @@ namespace doancuoiki
                 ktra_label_conclude2.Text = ktra_label_chuong.Text = "Tất cả";
             }
         }
-        private void ktra_button_codapan_Click(object sender, EventArgs e)
-        {
-            if (flag_hotro == 0)
-            {
-                flag_hotro = 1;
-                ktra_button_codapan.BackColor = Color.Red;
-                ktra_label_cogoiy.Visible = true;
-            }
-            else
-            {
-                flag_hotro = 0;
-                ktra_button_codapan.BackColor = Color.Green;
-                ktra_label_cogoiy.Visible = false;
-            }
-        }
 
         private void buttonNext_Click(object sender, EventArgs e)
         {
@@ -233,7 +206,7 @@ namespace doancuoiki
                 else if (radioButtonC.Checked == true) { strTraLoi[num_ques] = "C"; }
                 else { strTraLoi[num_ques] = "D"; }
                 num_ques += 1;
-                if (num_ques > 3)
+                if (num_ques > 16)
                 {
                     //LabelScore.Text = chamdiem().ToString();
                 }
@@ -243,13 +216,21 @@ namespace doancuoiki
         private int chamdiem()
         {
             int score = 0;
-            for(int i = 1; i < 4; i++)
+            for(int i = 1; i < 16; i++)
             {
                 if (strTraLoi[i] == strdapan[i]) { score += 1; }
             }
             return score;
         }
 
-
+        private void ktra_button_goiy_Click(object sender, EventArgs e)
+        {
+            if (flowLayoutPanel1.Visible == true)
+            {
+                flowLayoutPanel1.Visible = false;
+            }
+            else { flowLayoutPanel1.Visible = true; 
+        }
+        }
     }
 }

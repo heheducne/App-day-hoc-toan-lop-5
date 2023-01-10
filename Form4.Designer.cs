@@ -30,7 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_kiemtra));
             this.label1 = new System.Windows.Forms.Label();
-            this.ktra_button_tracnghiem = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.ktra_button_chuong1 = new System.Windows.Forms.Button();
@@ -42,26 +41,27 @@
             this.ktra_button_batdaulambai = new System.Windows.Forms.Button();
             this.ktra_pictureBox_back = new System.Windows.Forms.PictureBox();
             this.ktra_panel_kiemtra = new System.Windows.Forms.Panel();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.pictureBoxHint = new System.Windows.Forms.PictureBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.ktra_button_goiy = new System.Windows.Forms.Button();
             this.buttonNext = new System.Windows.Forms.Button();
             this.radioButtonD = new System.Windows.Forms.RadioButton();
             this.radioButtonC = new System.Windows.Forms.RadioButton();
             this.radioButtonB = new System.Windows.Forms.RadioButton();
             this.radioButtonA = new System.Windows.Forms.RadioButton();
-            this.pictureBoxHint = new System.Windows.Forms.PictureBox();
             this.pictureBoxAns = new System.Windows.Forms.PictureBox();
             this.pictureBoxQues = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.ktra_label_conclude = new System.Windows.Forms.Label();
             this.ktra_label_conclude2 = new System.Windows.Forms.Label();
-            this.ktra_button_codapan = new System.Windows.Forms.Button();
             this.ktra_label_cogoiy = new System.Windows.Forms.Label();
-            this.ktra_button_goiy = new System.Windows.Forms.Button();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
             this.ktra_label_chuong = new System.Windows.Forms.Label();
             this.ktra_pictureBox2 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.ktra_pictureBox_back)).BeginInit();
             this.ktra_panel_kiemtra.SuspendLayout();
+            this.flowLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxHint)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAns)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxQues)).BeginInit();
@@ -80,19 +80,6 @@
             this.label1.Size = new System.Drawing.Size(1103, 113);
             this.label1.TabIndex = 0;
             this.label1.Text = "KIỂM TRA KIẾN THỨC";
-            // 
-            // ktra_button_tracnghiem
-            // 
-            this.ktra_button_tracnghiem.BackColor = System.Drawing.Color.Green;
-            this.ktra_button_tracnghiem.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ktra_button_tracnghiem.ForeColor = System.Drawing.Color.Cyan;
-            this.ktra_button_tracnghiem.Location = new System.Drawing.Point(72, 211);
-            this.ktra_button_tracnghiem.Name = "ktra_button_tracnghiem";
-            this.ktra_button_tracnghiem.Size = new System.Drawing.Size(360, 187);
-            this.ktra_button_tracnghiem.TabIndex = 1;
-            this.ktra_button_tracnghiem.Text = "TRẮC NGHIỆM\r\n\r\n10 câu hỏi";
-            this.ktra_button_tracnghiem.UseVisualStyleBackColor = false;
-            this.ktra_button_tracnghiem.Click += new System.EventHandler(this.ktra_button_tracnghiem_Click);
             // 
             // label2
             // 
@@ -226,6 +213,7 @@
             this.ktra_panel_kiemtra.AutoSize = true;
             this.ktra_panel_kiemtra.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ktra_panel_kiemtra.BackgroundImage")));
             this.ktra_panel_kiemtra.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ktra_panel_kiemtra.Controls.Add(this.flowLayoutPanel1);
             this.ktra_panel_kiemtra.Controls.Add(this.label5);
             this.ktra_panel_kiemtra.Controls.Add(this.label4);
             this.ktra_panel_kiemtra.Controls.Add(this.ktra_button_goiy);
@@ -234,14 +222,68 @@
             this.ktra_panel_kiemtra.Controls.Add(this.radioButtonC);
             this.ktra_panel_kiemtra.Controls.Add(this.radioButtonB);
             this.ktra_panel_kiemtra.Controls.Add(this.radioButtonA);
-            this.ktra_panel_kiemtra.Controls.Add(this.pictureBoxHint);
             this.ktra_panel_kiemtra.Controls.Add(this.pictureBoxAns);
             this.ktra_panel_kiemtra.Controls.Add(this.pictureBoxQues);
-            this.ktra_panel_kiemtra.Location = new System.Drawing.Point(-1, 126);
+            this.ktra_panel_kiemtra.Location = new System.Drawing.Point(-1, 128);
             this.ktra_panel_kiemtra.Name = "ktra_panel_kiemtra";
-            this.ktra_panel_kiemtra.Size = new System.Drawing.Size(1590, 634);
+            this.ktra_panel_kiemtra.Size = new System.Drawing.Size(1590, 818);
             this.ktra_panel_kiemtra.TabIndex = 15;
             this.ktra_panel_kiemtra.Visible = false;
+            // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.AutoScroll = true;
+            this.flowLayoutPanel1.Controls.Add(this.pictureBoxHint);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(86, 394);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(1020, 231);
+            this.flowLayoutPanel1.TabIndex = 12;
+            this.flowLayoutPanel1.Visible = false;
+            // 
+            // pictureBoxHint
+            // 
+            this.pictureBoxHint.Location = new System.Drawing.Point(3, 3);
+            this.pictureBoxHint.Name = "pictureBoxHint";
+            this.pictureBoxHint.Size = new System.Drawing.Size(8, 8);
+            this.pictureBoxHint.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBoxHint.TabIndex = 0;
+            this.pictureBoxHint.TabStop = false;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.Transparent;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.GhostWhite;
+            this.label5.Location = new System.Drawing.Point(1047, 12);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(214, 36);
+            this.label5.TabIndex = 11;
+            this.label5.Text = "CÂU TRẢ LỜI";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.GhostWhite;
+            this.label4.Location = new System.Drawing.Point(4, 5);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(145, 36);
+            this.label4.TabIndex = 10;
+            this.label4.Text = "CÂU HỎI";
+            // 
+            // ktra_button_goiy
+            // 
+            this.ktra_button_goiy.BackColor = System.Drawing.Color.Red;
+            this.ktra_button_goiy.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ktra_button_goiy.Location = new System.Drawing.Point(3, 394);
+            this.ktra_button_goiy.Name = "ktra_button_goiy";
+            this.ktra_button_goiy.Size = new System.Drawing.Size(72, 231);
+            this.ktra_button_goiy.TabIndex = 9;
+            this.ktra_button_goiy.Text = "GỢI Ý";
+            this.ktra_button_goiy.UseVisualStyleBackColor = false;
+            this.ktra_button_goiy.Click += new System.EventHandler(this.ktra_button_goiy_Click);
             // 
             // buttonNext
             // 
@@ -259,7 +301,7 @@
             // 
             this.radioButtonD.AutoSize = true;
             this.radioButtonD.BackColor = System.Drawing.Color.Transparent;
-            this.radioButtonD.Location = new System.Drawing.Point(1314, 280);
+            this.radioButtonD.Location = new System.Drawing.Point(1068, 293);
             this.radioButtonD.MinimumSize = new System.Drawing.Size(30, 30);
             this.radioButtonD.Name = "radioButtonD";
             this.radioButtonD.Size = new System.Drawing.Size(30, 30);
@@ -271,7 +313,7 @@
             // 
             this.radioButtonC.AutoSize = true;
             this.radioButtonC.BackColor = System.Drawing.Color.Transparent;
-            this.radioButtonC.Location = new System.Drawing.Point(1314, 213);
+            this.radioButtonC.Location = new System.Drawing.Point(1068, 226);
             this.radioButtonC.MinimumSize = new System.Drawing.Size(30, 30);
             this.radioButtonC.Name = "radioButtonC";
             this.radioButtonC.Size = new System.Drawing.Size(30, 30);
@@ -283,7 +325,7 @@
             // 
             this.radioButtonB.AutoSize = true;
             this.radioButtonB.BackColor = System.Drawing.Color.Transparent;
-            this.radioButtonB.Location = new System.Drawing.Point(1314, 149);
+            this.radioButtonB.Location = new System.Drawing.Point(1068, 162);
             this.radioButtonB.MinimumSize = new System.Drawing.Size(30, 30);
             this.radioButtonB.Name = "radioButtonB";
             this.radioButtonB.Size = new System.Drawing.Size(30, 30);
@@ -295,7 +337,7 @@
             // 
             this.radioButtonA.AutoSize = true;
             this.radioButtonA.BackColor = System.Drawing.Color.Transparent;
-            this.radioButtonA.Location = new System.Drawing.Point(1314, 84);
+            this.radioButtonA.Location = new System.Drawing.Point(1068, 97);
             this.radioButtonA.MinimumSize = new System.Drawing.Size(30, 30);
             this.radioButtonA.Name = "radioButtonA";
             this.radioButtonA.Size = new System.Drawing.Size(30, 30);
@@ -303,20 +345,10 @@
             this.radioButtonA.TabStop = true;
             this.radioButtonA.UseVisualStyleBackColor = false;
             // 
-            // pictureBoxHint
-            // 
-            this.pictureBoxHint.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxHint.Image")));
-            this.pictureBoxHint.Location = new System.Drawing.Point(81, 456);
-            this.pictureBoxHint.Name = "pictureBoxHint";
-            this.pictureBoxHint.Size = new System.Drawing.Size(908, 172);
-            this.pictureBoxHint.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBoxHint.TabIndex = 2;
-            this.pictureBoxHint.TabStop = false;
-            // 
             // pictureBoxAns
             // 
             this.pictureBoxAns.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxAns.Image")));
-            this.pictureBoxAns.Location = new System.Drawing.Point(1353, 44);
+            this.pictureBoxAns.Location = new System.Drawing.Point(1107, 57);
             this.pictureBoxAns.Name = "pictureBoxAns";
             this.pictureBoxAns.Size = new System.Drawing.Size(104, 306);
             this.pictureBoxAns.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -353,7 +385,7 @@
             this.ktra_label_conclude.ForeColor = System.Drawing.Color.RoyalBlue;
             this.ktra_label_conclude.Location = new System.Drawing.Point(956, 312);
             this.ktra_label_conclude.Name = "ktra_label_conclude";
-            this.ktra_label_conclude.Size = new System.Drawing.Size(294, 54);
+            this.ktra_label_conclude.Size = new System.Drawing.Size(302, 55);
             this.ktra_label_conclude.TabIndex = 17;
             this.ktra_label_conclude.Text = "Trắc nghiệm";
             this.ktra_label_conclude.Visible = false;
@@ -371,19 +403,6 @@
             this.ktra_label_conclude2.Text = "Chương 3";
             this.ktra_label_conclude2.Visible = false;
             // 
-            // ktra_button_codapan
-            // 
-            this.ktra_button_codapan.BackColor = System.Drawing.Color.Green;
-            this.ktra_button_codapan.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ktra_button_codapan.ForeColor = System.Drawing.Color.Cyan;
-            this.ktra_button_codapan.Location = new System.Drawing.Point(438, 211);
-            this.ktra_button_codapan.Name = "ktra_button_codapan";
-            this.ktra_button_codapan.Size = new System.Drawing.Size(172, 187);
-            this.ktra_button_codapan.TabIndex = 19;
-            this.ktra_button_codapan.Text = "Hỗ trợ\r\ngợi ý";
-            this.ktra_button_codapan.UseVisualStyleBackColor = false;
-            this.ktra_button_codapan.Click += new System.EventHandler(this.ktra_button_codapan_Click);
-            // 
             // ktra_label_cogoiy
             // 
             this.ktra_label_cogoiy.AutoSize = true;
@@ -392,45 +411,10 @@
             this.ktra_label_cogoiy.ForeColor = System.Drawing.Color.RoyalBlue;
             this.ktra_label_cogoiy.Location = new System.Drawing.Point(1026, 375);
             this.ktra_label_cogoiy.Name = "ktra_label_cogoiy";
-            this.ktra_label_cogoiy.Size = new System.Drawing.Size(166, 39);
+            this.ktra_label_cogoiy.Size = new System.Drawing.Size(162, 38);
             this.ktra_label_cogoiy.TabIndex = 20;
             this.ktra_label_cogoiy.Text = "(có gợi ý)";
             this.ktra_label_cogoiy.Visible = false;
-            // 
-            // ktra_button_goiy
-            // 
-            this.ktra_button_goiy.BackColor = System.Drawing.Color.Red;
-            this.ktra_button_goiy.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ktra_button_goiy.Location = new System.Drawing.Point(3, 453);
-            this.ktra_button_goiy.Name = "ktra_button_goiy";
-            this.ktra_button_goiy.Size = new System.Drawing.Size(72, 172);
-            this.ktra_button_goiy.TabIndex = 9;
-            this.ktra_button_goiy.Text = "GỢI Ý";
-            this.ktra_button_goiy.UseVisualStyleBackColor = false;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.GhostWhite;
-            this.label4.Location = new System.Drawing.Point(4, 5);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(145, 36);
-            this.label4.TabIndex = 10;
-            this.label4.Text = "CÂU HỎI";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.GhostWhite;
-            this.label5.Location = new System.Drawing.Point(1213, 5);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(214, 36);
-            this.label5.TabIndex = 11;
-            this.label5.Text = "CÂU TRẢ LỜI";
             // 
             // ktra_label_chuong
             // 
@@ -440,7 +424,7 @@
             this.ktra_label_chuong.ForeColor = System.Drawing.Color.Red;
             this.ktra_label_chuong.Location = new System.Drawing.Point(64, 75);
             this.ktra_label_chuong.Name = "ktra_label_chuong";
-            this.ktra_label_chuong.Size = new System.Drawing.Size(71, 16);
+            this.ktra_label_chuong.Size = new System.Drawing.Size(77, 17);
             this.ktra_label_chuong.TabIndex = 19;
             this.ktra_label_chuong.Text = "Chương 1";
             this.ktra_label_chuong.Visible = false;
@@ -469,10 +453,8 @@
             this.Controls.Add(this.ktra_label_chuong);
             this.Controls.Add(this.ktra_label_cogoiy);
             this.Controls.Add(this.ktra_pictureBox2);
-            this.Controls.Add(this.ktra_button_codapan);
             this.Controls.Add(this.ktra_label_conclude2);
             this.Controls.Add(this.ktra_label_conclude);
-            this.Controls.Add(this.ktra_button_tracnghiem);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.ktra_pictureBox_back);
             this.Controls.Add(this.ktra_button_batdaulambai);
@@ -495,6 +477,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.ktra_pictureBox_back)).EndInit();
             this.ktra_panel_kiemtra.ResumeLayout(false);
             this.ktra_panel_kiemtra.PerformLayout();
+            this.flowLayoutPanel1.ResumeLayout(false);
+            this.flowLayoutPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxHint)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAns)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxQues)).EndInit();
@@ -508,7 +492,6 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button ktra_button_tracnghiem;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button ktra_button_chuong1;
@@ -524,19 +507,19 @@
         private System.Windows.Forms.RadioButton radioButtonC;
         private System.Windows.Forms.RadioButton radioButtonB;
         private System.Windows.Forms.RadioButton radioButtonA;
-        private System.Windows.Forms.PictureBox pictureBoxHint;
         private System.Windows.Forms.PictureBox pictureBoxAns;
         private System.Windows.Forms.PictureBox pictureBoxQues;
         private System.Windows.Forms.Button buttonNext;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label ktra_label_conclude;
         private System.Windows.Forms.Label ktra_label_conclude2;
-        private System.Windows.Forms.Button ktra_button_codapan;
         private System.Windows.Forms.Label ktra_label_cogoiy;
         private System.Windows.Forms.Label ktra_label_chuong;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button ktra_button_goiy;
         private System.Windows.Forms.PictureBox ktra_pictureBox2;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+        private System.Windows.Forms.PictureBox pictureBoxHint;
     }
 }
