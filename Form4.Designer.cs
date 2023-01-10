@@ -196,7 +196,7 @@
             this.ktra_panel_kiemtra.Controls.Add(this.radioButtonA);
             this.ktra_panel_kiemtra.Controls.Add(this.pictureBoxAns);
             this.ktra_panel_kiemtra.Controls.Add(this.pictureBoxQues);
-            this.ktra_panel_kiemtra.Location = new System.Drawing.Point(4000, 4000);
+            this.ktra_panel_kiemtra.Location = new System.Drawing.Point(0, 128);
             this.ktra_panel_kiemtra.Name = "ktra_panel_kiemtra";
             this.ktra_panel_kiemtra.Size = new System.Drawing.Size(1590, 818);
             this.ktra_panel_kiemtra.TabIndex = 15;
@@ -275,7 +275,7 @@
             this.radioButtonD.BackColor = System.Drawing.Color.Transparent;
             this.radioButtonD.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButtonD.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.radioButtonD.Location = new System.Drawing.Point(1499, 287);
+            this.radioButtonD.Location = new System.Drawing.Point(1480, 287);
             this.radioButtonD.MinimumSize = new System.Drawing.Size(30, 30);
             this.radioButtonD.Name = "radioButtonD";
             this.radioButtonD.Size = new System.Drawing.Size(48, 30);
@@ -290,7 +290,7 @@
             this.radioButtonC.BackColor = System.Drawing.Color.Transparent;
             this.radioButtonC.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButtonC.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.radioButtonC.Location = new System.Drawing.Point(1499, 221);
+            this.radioButtonC.Location = new System.Drawing.Point(1403, 287);
             this.radioButtonC.MinimumSize = new System.Drawing.Size(30, 30);
             this.radioButtonC.Name = "radioButtonC";
             this.radioButtonC.Size = new System.Drawing.Size(49, 30);
@@ -305,7 +305,7 @@
             this.radioButtonB.BackColor = System.Drawing.Color.Transparent;
             this.radioButtonB.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButtonB.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.radioButtonB.Location = new System.Drawing.Point(1499, 154);
+            this.radioButtonB.Location = new System.Drawing.Point(1322, 287);
             this.radioButtonB.MinimumSize = new System.Drawing.Size(30, 30);
             this.radioButtonB.Name = "radioButtonB";
             this.radioButtonB.Size = new System.Drawing.Size(47, 30);
@@ -320,7 +320,7 @@
             this.radioButtonA.BackColor = System.Drawing.Color.Transparent;
             this.radioButtonA.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButtonA.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.radioButtonA.Location = new System.Drawing.Point(1499, 85);
+            this.radioButtonA.Location = new System.Drawing.Point(1250, 284);
             this.radioButtonA.MinimumSize = new System.Drawing.Size(30, 30);
             this.radioButtonA.Name = "radioButtonA";
             this.radioButtonA.Size = new System.Drawing.Size(48, 30);
@@ -332,9 +332,9 @@
             // pictureBoxAns
             // 
             this.pictureBoxAns.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxAns.Image")));
-            this.pictureBoxAns.Location = new System.Drawing.Point(1296, 57);
+            this.pictureBoxAns.Location = new System.Drawing.Point(1224, 96);
             this.pictureBoxAns.Name = "pictureBoxAns";
-            this.pictureBoxAns.Size = new System.Drawing.Size(104, 306);
+            this.pictureBoxAns.Size = new System.Drawing.Size(266, 166);
             this.pictureBoxAns.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.pictureBoxAns.TabIndex = 1;
             this.pictureBoxAns.TabStop = false;
@@ -421,8 +421,8 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1582, 753);
-            this.Controls.Add(this.ktra_label_2);
             this.Controls.Add(this.ktra_panel_kiemtra);
+            this.Controls.Add(this.ktra_label_2);
             this.Controls.Add(this.ktra_label_chuong);
             this.Controls.Add(this.ktra_pictureBox2);
             this.Controls.Add(this.ktra_label_conclude2);

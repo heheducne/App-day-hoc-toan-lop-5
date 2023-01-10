@@ -168,7 +168,7 @@ namespace doancuoiki
 
                 ktra_label_conclude2.Visible = true;
                 ktra_label_conclude2.Text = ktra_label_chuong.Text = "Chương 5";
-                ktra_label_2.Text = "Ôn tập";
+                ktra_label_2.Text = "Ôn tập cuối năm";
             }
         }
 
