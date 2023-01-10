@@ -329,6 +329,7 @@
             // lythuyet_panel_list
             // 
             this.lythuyet_panel_list.AutoScroll = true;
+            this.lythuyet_panel_list.BackColor = System.Drawing.Color.LightSteelBlue;
             this.lythuyet_panel_list.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lythuyet_panel_list.Controls.Add(this.label10);
             this.lythuyet_panel_list.Controls.Add(this.panel51);

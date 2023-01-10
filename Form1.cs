@@ -36,6 +36,7 @@ namespace doancuoiki
             main_textBox_ten.Text = "";
             main_textBox_lop.Text = "";
             main_textBox_truong.Text = "";
+            main_panel_ho_va_ten.Visible = false;
         }
         //button đồng ý tạo học sinh mới
         private void button1_Click(object sender, EventArgs e)
@@ -47,6 +48,7 @@ namespace doancuoiki
             else
             {
                 main_panel_taohocsinhmoi.Visible = false;
+                main_panel_ho_va_ten.Visible = true;
                 string sqlcmd = "INSERT INTO dbo.ACCOUNT (NAME_STUDENT,CLASS,SCHOOL)  VALUES ('"+main_textBox_ten.Text+
                                    "', '"+main_textBox_lop.Text+
                                    "', '"+main_textBox_truong.Text+"');";
@@ -88,6 +90,35 @@ namespace doancuoiki
             Form_kiemtra f1 = new Form_kiemtra();
             f1.ShowDialog();
             this.Show();
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            label7.Visible = true;
+            label8.Visible = true;
+            label9.Visible = true;
+
+            main_pictureBox_kiemtra.Visible = true;
+            main_pictureBox_luyentap.Visible = true;
+            main_pictureBox_lythuyet.Visible = true;
+
+            main_panel_taohocsinhmoi.Visible = false;
+            main_panel_ho_va_ten.Visible = false;
+
+            main_pictureBox_bear1.Visible = true;
+            main_pictureBox_bear2.Visible = true;
+            main_pictureBox_bear3.Visible = true;
+        }
+
+        private void main_pictureBox_start_Click(object sender, EventArgs e)
+        {
+            main_panel_ho_va_ten.Visible = true;
+            main_pictureBox_start.Visible = false;
+        }
+
+        private void main_pictureBox_user_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
