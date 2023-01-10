@@ -118,7 +118,25 @@ namespace doancuoiki
 
         private void main_pictureBox_user_Click(object sender, EventArgs e)
         {
+            label7.Visible = false;
+            label8.Visible = false;
+            label9.Visible = false;
 
+            main_pictureBox_kiemtra.Visible = false;
+            main_pictureBox_luyentap.Visible = false;
+            main_pictureBox_lythuyet.Visible = false;
+
+            main_panel_taohocsinhmoi.Visible = false;
+            main_panel_ho_va_ten.Visible = true;
+
+            main_pictureBox_bear1.Visible = false;
+            main_pictureBox_bear2.Visible = false;
+            main_pictureBox_bear3.Visible = false;
+        }
+
+        private void main_pictureBox_info_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Sinh viên thực hiện:\r\n Bùi Hữu Đức - 20520449\r\n Cao Khắc Tuân - 20520841\r\n JAN-2023","Thông tin",MessageBoxButtons.OK,MessageBoxIcon.Information);
         }
     }
 }

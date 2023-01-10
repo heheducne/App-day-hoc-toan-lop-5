@@ -30,7 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_main));
             this.main_panel_ho_va_ten = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
+            this.main_button_ok = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
             this.main_comboBox_ho_va_ten = new System.Windows.Forms.ComboBox();
@@ -80,7 +80,7 @@
             this.main_panel_ho_va_ten.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("main_panel_ho_va_ten.BackgroundImage")));
             this.main_panel_ho_va_ten.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.main_panel_ho_va_ten.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.main_panel_ho_va_ten.Controls.Add(this.button1);
+            this.main_panel_ho_va_ten.Controls.Add(this.main_button_ok);
             this.main_panel_ho_va_ten.Controls.Add(this.label4);
             this.main_panel_ho_va_ten.Controls.Add(this.button2);
             this.main_panel_ho_va_ten.Controls.Add(this.main_comboBox_ho_va_ten);
@@ -95,17 +95,17 @@
             this.main_panel_ho_va_ten.TabIndex = 0;
             this.main_panel_ho_va_ten.Visible = false;
             // 
-            // button1
+            // main_button_ok
             // 
-            this.button1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(362, 216);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(98, 50);
-            this.button1.TabIndex = 14;
-            this.button1.Text = "OK";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            this.main_button_ok.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.main_button_ok.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.main_button_ok.Location = new System.Drawing.Point(362, 216);
+            this.main_button_ok.Name = "main_button_ok";
+            this.main_button_ok.Size = new System.Drawing.Size(98, 50);
+            this.main_button_ok.TabIndex = 14;
+            this.main_button_ok.Text = "OK";
+            this.main_button_ok.UseVisualStyleBackColor = false;
+            this.main_button_ok.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // label4
             // 
@@ -301,6 +301,7 @@
             this.main_pictureBox_info.Size = new System.Drawing.Size(100, 100);
             this.main_pictureBox_info.TabIndex = 8;
             this.main_pictureBox_info.TabStop = false;
+            this.main_pictureBox_info.Click += new System.EventHandler(this.main_pictureBox_info_Click);
             // 
             // main_panel_taohocsinhmoi
             // 
@@ -547,7 +548,7 @@
         private System.Windows.Forms.TextBox main_textBox_truong;
         private System.Windows.Forms.TextBox main_textBox_ten;
         private System.Windows.Forms.Button buttonExitAdd;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button main_button_ok;
         private System.Windows.Forms.PictureBox main_pictureBox_user;
         private System.Windows.Forms.PictureBox main_pictureBox_start;
         private System.Windows.Forms.PictureBox main_pictureBox_bear1;
