@@ -30,14 +30,14 @@ namespace doancuoiki
             string path = Application.StartupPath + "\\LuyenTap\\Chuong" + flag_chuong.ToString() + "\\DAPAN.txt";
             StreamReader srdapan = new StreamReader(path);
             string line;
-            for (int i = 1; i <4 ; i++)
+            for (int i = 1; i <21 ; i++)
             {
                 strdapan[i] = (line = srdapan.ReadLine());
             }
         }
         //kiem tra cac nut da duoc bam chua
         int num_ques = 1;
-        int flag_chuong = 0;
+        int flag_chuong ;
         private void Form_kiemtra_Load(object sender, EventArgs e)
         {
             flag_chuong = 0;
@@ -56,7 +56,7 @@ namespace doancuoiki
             //kiem tra user da chon du 2 been chua (hinh thuc + chuong)
             if((flag_chuong == 0))
             {
-                MessageBox.Show("Vui chon day du hinh thuc va chuong ma ban muon kiem tra");
+                MessageBox.Show("Vui chon chuong ma ban muon kiem tra");
             }
             else
             {
@@ -64,20 +64,18 @@ namespace doancuoiki
                 ktra_panel_kiemtra.Visible = true;
                 dapan(flag_chuong);
                 AddQues(num_ques);
-                ktra_label_chuong.Visible = true;
-                ktra_pictureBox2.Visible = true;
-                ktra_label_cogoiy.Visible = false;
-                flowLayoutPanel1.Visible = false;
+                ktra_label_conclude2.Visible = false;
+                ktra_label_2.Visible = false;
             }
-
         }
         private void AddQues(int tmp)
         {
+            label4.Text = "CÂU HỎI: " + tmp.ToString() + "/20";
+            flowLayoutPanel1.Visible = false;
             radioButtonA.Checked = false;
             radioButtonB.Checked = false;
             radioButtonC.Checked = false;
             radioButtonD.Checked = false;
-            flowLayoutPanel1.Visible = true;
             string path = Application.StartupPath+"\\LuyenTap\\Chuong"+flag_chuong.ToString()+"\\Cau"+tmp.ToString();
             Bitmap pic = new Bitmap(path + "\\ques.png"); pictureBoxQues.Image = pic;
             Bitmap pic1 = new Bitmap(path + "\\ans.png"); pictureBoxAns.Image = pic1;
@@ -99,6 +97,7 @@ namespace doancuoiki
                 ktra_label_conclude2.Visible = true;
                 ktra_label_conclude2.Text = ktra_label_chuong.Text = "Chương 1";
                 ktra_label_2.Text = "Ôn tập và bổ sung về phân số. \r\nGiải toán liên quan đến tỉ lệ. \r\nBảng đơn vị đo diện tích";
+                ktra_label_2.Visible = true;
             }
         }
 
@@ -117,6 +116,7 @@ namespace doancuoiki
                 ktra_label_conclude2.Visible = true;
                 ktra_label_conclude2.Text = ktra_label_chuong.Text = "Chương 2";
                 ktra_label_2.Text = "Số thập phân. \r\nCác phép tính với số thập phân";
+                ktra_label_2.Visible = true;
             }
         }
 
@@ -134,6 +134,7 @@ namespace doancuoiki
                 ktra_label_conclude2.Visible = true;
                 ktra_label_conclude2.Text = ktra_label_chuong.Text = "Chương 3";
                 ktra_label_2.Text = "Hình học";
+                ktra_label_2.Visible = true;
             }
         }
 
@@ -151,6 +152,7 @@ namespace doancuoiki
                 ktra_label_conclude2.Visible = true;
                 ktra_label_conclude2.Text = ktra_label_chuong.Text = "Chương 4";
                 ktra_label_2.Text = "Số đo thời gian.\r\n Toán chuyển động đều";
+                ktra_label_2.Visible = true;
             }
         }
 
@@ -169,6 +171,7 @@ namespace doancuoiki
                 ktra_label_conclude2.Visible = true;
                 ktra_label_conclude2.Text = ktra_label_chuong.Text = "Chương 5";
                 ktra_label_2.Text = "Ôn tập cuối năm";
+                ktra_label_2.Visible = true;
             }
         }
 
@@ -182,15 +185,16 @@ namespace doancuoiki
             }
             else
             {
-                flowLayoutPanel1.Visible = false;
                 if (radioButtonA.Checked == true) { strTraLoi[num_ques] = "A"; }
                 else if (radioButtonB.Checked == true){ strTraLoi[num_ques] = "B"; }
                 else if (radioButtonC.Checked == true) { strTraLoi[num_ques] = "C"; }
                 else { strTraLoi[num_ques] = "D"; }
                 num_ques += 1;
-                if (num_ques > 16)
+                if (num_ques > 20)
                 {
-                    //LabelScore.Text = chamdiem().ToString();
+                    panelScore.Visible = true;
+                    labelScore.Text = chamdiem().ToString()+"/20";
+
                 }
                 else { AddQues(num_ques); }
             }
@@ -198,7 +202,7 @@ namespace doancuoiki
         private int chamdiem()
         {
             int score = 0;
-            for(int i = 1; i < 16; i++)
+            for(int i = 1; i < 21; i++)
             {
                 if (strTraLoi[i] == strdapan[i]) { score += 1; }
             }
@@ -213,6 +217,23 @@ namespace doancuoiki
             }
             else { flowLayoutPanel1.Visible = true; 
         }
+        }
+
+        private void pictureBoxExitpanel_Click(object sender, EventArgs e)
+        {
+            ktra_panel_kiemtra.Visible = false;
+            ktra_label_conclude2.Visible = true;
+            ktra_label_2.Visible = true;
+            num_ques = 1;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            ktra_panel_kiemtra.Visible = false;
+            ktra_label_conclude2.Visible = true;
+            ktra_label_2.Visible = true;
+            num_ques = 1;
+            panelScore.Visible = false;
         }
     }
 }

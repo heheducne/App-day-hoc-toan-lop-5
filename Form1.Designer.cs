@@ -203,7 +203,7 @@
             this.label6.ForeColor = System.Drawing.Color.Gold;
             this.label6.Location = new System.Drawing.Point(200, 22);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(1187, 152);
+            this.label6.Size = new System.Drawing.Size(1200, 153);
             this.label6.TabIndex = 1;
             this.label6.Text = "HỌC TOÁN LỚP 5";
             // 
@@ -271,7 +271,7 @@
             this.label8.ForeColor = System.Drawing.Color.MediumSlateBlue;
             this.label8.Location = new System.Drawing.Point(210, 407);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(222, 108);
+            this.label8.Size = new System.Drawing.Size(229, 110);
             this.label8.TabIndex = 6;
             this.label8.Text = "THI THỬ\r\n45 PHÚT";
             this.label8.TextAlign = System.Drawing.ContentAlignment.TopCenter;

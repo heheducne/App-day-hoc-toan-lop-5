@@ -407,7 +407,7 @@
             this.label10.AutoSize = true;
             this.label10.Location = new System.Drawing.Point(249, 4846);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(0, 16);
+            this.label10.Size = new System.Drawing.Size(0, 17);
             this.label10.TabIndex = 70;
             // 
             // panel51
@@ -2269,7 +2269,7 @@
             this.label6.BackColor = System.Drawing.Color.PaleTurquoise;
             this.label6.Location = new System.Drawing.Point(662, 110);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(77, 16);
+            this.label6.Size = new System.Drawing.Size(80, 17);
             this.label6.TabIndex = 14;
             this.label6.Text = "ĐÁNH DẤU";
             // 
@@ -2287,6 +2287,7 @@
             this.Controls.Add(this.lythuyet_panel_list);
             this.Controls.Add(this.lythuyet_pictureBox_back);
             this.Controls.Add(this.lythuyet_label_top);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximumSize = new System.Drawing.Size(1600, 800);
             this.MinimizeBox = false;

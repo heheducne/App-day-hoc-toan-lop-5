@@ -15,6 +15,8 @@ namespace doancuoiki
     {
         DataProvider provider = new DataProvider();
         Form_lythuyet f1 = new Form_lythuyet();
+        DataTable dt;
+        DataRow row;
         public Form_main()
         {
             InitializeComponent();
@@ -23,7 +25,7 @@ namespace doancuoiki
         private void cbAdd()
         {
             main_comboBox_ho_va_ten.Items.Clear();
-            DataTable dt = provider.excuteQuery("SELECT * FROM dbo.ACCOUNT");
+            dt = provider.excuteQuery("SELECT * FROM dbo.ACCOUNT");
             foreach (DataRow row in dt.Rows)
             {
                 main_comboBox_ho_va_ten.Items.Add(row[1].ToString());
@@ -69,21 +71,23 @@ namespace doancuoiki
         private void main_pictureBox_luyentap_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Form_luyentap f4 = new Form_luyentap();
+            Form_luyentap f4 = new Form_luyentap(row);
             f4.ShowDialog();
+            this.Show();
         }
 
         private void buttonExitAdd_Click(object sender, EventArgs e)
         {
             main_panel_taohocsinhmoi.Visible = false;
+            main_panel_ho_va_ten.Visible = true;
         }
 
         private void main_comboBox_ho_va_ten_SelectedIndexChanged(object sender, EventArgs e)
         {
             string sqlcmd = "SELECT * FROM dbo.ACCOUNT WHERE NAME_STUDENT = '"+main_comboBox_ho_va_ten.Text+"'";
-            DataRow dt = provider.excuteQuery(sqlcmd).Rows[0];
-            main_label_lop.Text = dt[3].ToString();
-            main_label_truong.Text = dt[2].ToString();
+            row = provider.excuteQuery(sqlcmd).Rows[0];
+            main_label_lop.Text = row[3].ToString();
+            main_label_truong.Text = row[2].ToString();
         }
 
         private void main_pictureBox_kiemtra_Click(object sender, EventArgs e)
@@ -96,23 +100,29 @@ namespace doancuoiki
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-            label7.Visible = true;
-            label8.Visible = true;
-            label9.Visible = true;
+            if (main_comboBox_ho_va_ten.Text == "")
+            {
+                MessageBox.Show("Vui long chon hoc sinh");
+            }
+            else
+            {
+                label7.Visible = true;
+                label8.Visible = true;
+                label9.Visible = true;
 
-            main_pictureBox_kiemtra.Visible = true;
-            main_pictureBox_luyentap.Visible = true;
-            main_pictureBox_lythuyet.Visible = true;
+                main_pictureBox_kiemtra.Visible = true;
+                main_pictureBox_luyentap.Visible = true;
+                main_pictureBox_lythuyet.Visible = true;
 
-            main_panel_taohocsinhmoi.Visible = false;
-            main_panel_ho_va_ten.Visible = false;
+                main_panel_taohocsinhmoi.Visible = false;
+                main_panel_ho_va_ten.Visible = false;
 
-            main_pictureBox_bear1.Visible = true;
-            main_pictureBox_bear2.Visible = true;
-            main_pictureBox_bear3.Visible = true;
+                main_pictureBox_bear1.Visible = true;
+                main_pictureBox_bear2.Visible = true;
+                main_pictureBox_bear3.Visible = true;
 
-            main_pictureBox_user.Visible = true;
-
+                main_pictureBox_user.Visible = true;
+            }
         }
 
         private void main_pictureBox_start_Click(object sender, EventArgs e)
