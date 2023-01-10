@@ -32,6 +32,7 @@ namespace doancuoiki
             de45p_dethi_dokho.Text = de45p_label_de12.Text;
             de45p_dethi_button.BackgroundImage = de45p_button_de1.BackgroundImage;
             //cmt chua co
+            de45p_panel_dethi.Visible = true;
 
         }
 
@@ -43,6 +44,7 @@ namespace doancuoiki
             de45p_dethi_dokho.Text = de45p_label_de22.Text;
             de45p_dethi_button.BackgroundImage = de45p_button_de2.BackgroundImage;
             //cmt chua co
+            de45p_panel_dethi.Visible = true;
         }
 
         private void de45p_button_de3_Click(object sender, EventArgs e)
@@ -53,6 +55,7 @@ namespace doancuoiki
             de45p_dethi_dokho.Text = de45p_label_de32.Text;
             de45p_dethi_button.BackgroundImage = de45p_button_de3.BackgroundImage;
             //cmt chua co
+            de45p_panel_dethi.Visible = true;
         }
 
         private void de45p_button_de4_Click(object sender, EventArgs e)
@@ -63,6 +66,7 @@ namespace doancuoiki
             de45p_dethi_dokho.Text = de45p_label_de42.Text;
             de45p_dethi_button.BackgroundImage = de45p_button_de4.BackgroundImage;
             //cmt chua co
+            de45p_panel_dethi.Visible = true;
         }
 
         private void de45p_button_de5_Click(object sender, EventArgs e)
@@ -73,6 +77,7 @@ namespace doancuoiki
             de45p_dethi_dokho.Text = de45p_label_de52.Text;
             de45p_dethi_button.BackgroundImage = de45p_button_de5.BackgroundImage;
             //cmt chua co
+            de45p_panel_dethi.Visible = true;
         }
 
         private void de45p_button_de6_Click(object sender, EventArgs e)
@@ -83,6 +88,7 @@ namespace doancuoiki
             de45p_dethi_dokho.Text = de45p_label_de62.Text;
             de45p_dethi_button.BackgroundImage = de45p_button_de6.BackgroundImage;
             //cmt chua co
+            de45p_panel_dethi.Visible = true;
         }
 
         private void de45p_dethi_start_Click(object sender, EventArgs e)
@@ -93,6 +99,11 @@ namespace doancuoiki
         private void button2_Click(object sender, EventArgs e)
         {
             de45p_panel_thi.Visible = false;
+        }
+
+        private void de45p_pictureBox_back_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
