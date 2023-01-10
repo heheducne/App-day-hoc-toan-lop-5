@@ -285,9 +285,9 @@
             this.label9.ForeColor = System.Drawing.Color.MediumSlateBlue;
             this.label9.Location = new System.Drawing.Point(1172, 419);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(262, 102);
+            this.label9.Size = new System.Drawing.Size(270, 102);
             this.label9.TabIndex = 7;
-            this.label9.Text = "KIỂM TRA\r\nKIẾN THỨC";
+            this.label9.Text = "LUYỆN TẬP\r\n\r\n";
             this.label9.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.label9.Visible = false;
             // 
