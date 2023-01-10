@@ -52,11 +52,10 @@
             this.pictureBoxAns = new System.Windows.Forms.PictureBox();
             this.pictureBoxQues = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.ktra_label_conclude = new System.Windows.Forms.Label();
             this.ktra_label_conclude2 = new System.Windows.Forms.Label();
-            this.ktra_label_cogoiy = new System.Windows.Forms.Label();
             this.ktra_label_chuong = new System.Windows.Forms.Label();
             this.ktra_pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.ktra_label_2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.ktra_pictureBox_back)).BeginInit();
             this.ktra_panel_kiemtra.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
@@ -197,7 +196,7 @@
             this.ktra_panel_kiemtra.Controls.Add(this.radioButtonA);
             this.ktra_panel_kiemtra.Controls.Add(this.pictureBoxAns);
             this.ktra_panel_kiemtra.Controls.Add(this.pictureBoxQues);
-            this.ktra_panel_kiemtra.Location = new System.Drawing.Point(0, 128);
+            this.ktra_panel_kiemtra.Location = new System.Drawing.Point(4000, 4000);
             this.ktra_panel_kiemtra.Name = "ktra_panel_kiemtra";
             this.ktra_panel_kiemtra.Size = new System.Drawing.Size(1590, 818);
             this.ktra_panel_kiemtra.TabIndex = 15;
@@ -228,7 +227,7 @@
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.GhostWhite;
-            this.label5.Location = new System.Drawing.Point(1332, 12);
+            this.label5.Location = new System.Drawing.Point(1356, 18);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(214, 36);
             this.label5.TabIndex = 11;
@@ -240,7 +239,7 @@
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.GhostWhite;
-            this.label4.Location = new System.Drawing.Point(4, 5);
+            this.label4.Location = new System.Drawing.Point(30, 18);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(145, 36);
             this.label4.TabIndex = 10;
@@ -274,54 +273,66 @@
             // 
             this.radioButtonD.AutoSize = true;
             this.radioButtonD.BackColor = System.Drawing.Color.Transparent;
-            this.radioButtonD.Location = new System.Drawing.Point(1353, 293);
+            this.radioButtonD.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButtonD.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.radioButtonD.Location = new System.Drawing.Point(1499, 287);
             this.radioButtonD.MinimumSize = new System.Drawing.Size(30, 30);
             this.radioButtonD.Name = "radioButtonD";
-            this.radioButtonD.Size = new System.Drawing.Size(30, 30);
+            this.radioButtonD.Size = new System.Drawing.Size(48, 30);
             this.radioButtonD.TabIndex = 6;
             this.radioButtonD.TabStop = true;
+            this.radioButtonD.Text = "D";
             this.radioButtonD.UseVisualStyleBackColor = false;
             // 
             // radioButtonC
             // 
             this.radioButtonC.AutoSize = true;
             this.radioButtonC.BackColor = System.Drawing.Color.Transparent;
-            this.radioButtonC.Location = new System.Drawing.Point(1353, 226);
+            this.radioButtonC.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButtonC.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.radioButtonC.Location = new System.Drawing.Point(1499, 221);
             this.radioButtonC.MinimumSize = new System.Drawing.Size(30, 30);
             this.radioButtonC.Name = "radioButtonC";
-            this.radioButtonC.Size = new System.Drawing.Size(30, 30);
+            this.radioButtonC.Size = new System.Drawing.Size(49, 30);
             this.radioButtonC.TabIndex = 5;
             this.radioButtonC.TabStop = true;
+            this.radioButtonC.Text = "C";
             this.radioButtonC.UseVisualStyleBackColor = false;
             // 
             // radioButtonB
             // 
             this.radioButtonB.AutoSize = true;
             this.radioButtonB.BackColor = System.Drawing.Color.Transparent;
-            this.radioButtonB.Location = new System.Drawing.Point(1353, 162);
+            this.radioButtonB.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButtonB.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.radioButtonB.Location = new System.Drawing.Point(1499, 154);
             this.radioButtonB.MinimumSize = new System.Drawing.Size(30, 30);
             this.radioButtonB.Name = "radioButtonB";
-            this.radioButtonB.Size = new System.Drawing.Size(30, 30);
+            this.radioButtonB.Size = new System.Drawing.Size(47, 30);
             this.radioButtonB.TabIndex = 4;
             this.radioButtonB.TabStop = true;
+            this.radioButtonB.Text = "B";
             this.radioButtonB.UseVisualStyleBackColor = false;
             // 
             // radioButtonA
             // 
             this.radioButtonA.AutoSize = true;
             this.radioButtonA.BackColor = System.Drawing.Color.Transparent;
-            this.radioButtonA.Location = new System.Drawing.Point(1353, 97);
+            this.radioButtonA.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButtonA.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.radioButtonA.Location = new System.Drawing.Point(1499, 85);
             this.radioButtonA.MinimumSize = new System.Drawing.Size(30, 30);
             this.radioButtonA.Name = "radioButtonA";
-            this.radioButtonA.Size = new System.Drawing.Size(30, 30);
+            this.radioButtonA.Size = new System.Drawing.Size(48, 30);
             this.radioButtonA.TabIndex = 3;
             this.radioButtonA.TabStop = true;
+            this.radioButtonA.Text = "A";
             this.radioButtonA.UseVisualStyleBackColor = false;
             // 
             // pictureBoxAns
             // 
             this.pictureBoxAns.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxAns.Image")));
-            this.pictureBoxAns.Location = new System.Drawing.Point(1392, 57);
+            this.pictureBoxAns.Location = new System.Drawing.Point(1296, 57);
             this.pictureBoxAns.Name = "pictureBoxAns";
             this.pictureBoxAns.Size = new System.Drawing.Size(104, 306);
             this.pictureBoxAns.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -332,7 +343,7 @@
             // 
             this.pictureBoxQues.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pictureBoxQues.ErrorImage")));
             this.pictureBoxQues.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxQues.Image")));
-            this.pictureBoxQues.Location = new System.Drawing.Point(0, 57);
+            this.pictureBoxQues.Location = new System.Drawing.Point(26, 70);
             this.pictureBoxQues.Name = "pictureBoxQues";
             this.pictureBoxQues.Size = new System.Drawing.Size(680, 293);
             this.pictureBoxQues.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -350,42 +361,18 @@
             this.pictureBox1.TabIndex = 16;
             this.pictureBox1.TabStop = false;
             // 
-            // ktra_label_conclude
-            // 
-            this.ktra_label_conclude.AutoSize = true;
-            this.ktra_label_conclude.BackColor = System.Drawing.Color.White;
-            this.ktra_label_conclude.Font = new System.Drawing.Font("Microsoft Sans Serif", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ktra_label_conclude.ForeColor = System.Drawing.Color.RoyalBlue;
-            this.ktra_label_conclude.Location = new System.Drawing.Point(956, 312);
-            this.ktra_label_conclude.Name = "ktra_label_conclude";
-            this.ktra_label_conclude.Size = new System.Drawing.Size(294, 54);
-            this.ktra_label_conclude.TabIndex = 17;
-            this.ktra_label_conclude.Text = "Trắc nghiệm";
-            // 
             // ktra_label_conclude2
             // 
             this.ktra_label_conclude2.AutoSize = true;
             this.ktra_label_conclude2.BackColor = System.Drawing.Color.White;
             this.ktra_label_conclude2.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ktra_label_conclude2.ForeColor = System.Drawing.Color.RoyalBlue;
-            this.ktra_label_conclude2.Location = new System.Drawing.Point(965, 448);
+            this.ktra_label_conclude2.Location = new System.Drawing.Point(966, 272);
             this.ktra_label_conclude2.Name = "ktra_label_conclude2";
             this.ktra_label_conclude2.Size = new System.Drawing.Size(295, 69);
             this.ktra_label_conclude2.TabIndex = 18;
             this.ktra_label_conclude2.Text = "Chương 3";
             this.ktra_label_conclude2.Visible = false;
-            // 
-            // ktra_label_cogoiy
-            // 
-            this.ktra_label_cogoiy.AutoSize = true;
-            this.ktra_label_cogoiy.BackColor = System.Drawing.Color.White;
-            this.ktra_label_cogoiy.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ktra_label_cogoiy.ForeColor = System.Drawing.Color.RoyalBlue;
-            this.ktra_label_cogoiy.Location = new System.Drawing.Point(1026, 375);
-            this.ktra_label_cogoiy.Name = "ktra_label_cogoiy";
-            this.ktra_label_cogoiy.Size = new System.Drawing.Size(162, 38);
-            this.ktra_label_cogoiy.TabIndex = 20;
-            this.ktra_label_cogoiy.Text = "(có gợi ý)";
             // 
             // ktra_label_chuong
             // 
@@ -412,6 +399,20 @@
             this.ktra_pictureBox2.TabStop = false;
             this.ktra_pictureBox2.Visible = false;
             // 
+            // ktra_label_2
+            // 
+            this.ktra_label_2.AutoSize = true;
+            this.ktra_label_2.BackColor = System.Drawing.Color.White;
+            this.ktra_label_2.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ktra_label_2.ForeColor = System.Drawing.Color.RoyalBlue;
+            this.ktra_label_2.Location = new System.Drawing.Point(1024, 351);
+            this.ktra_label_2.Name = "ktra_label_2";
+            this.ktra_label_2.Size = new System.Drawing.Size(173, 39);
+            this.ktra_label_2.TabIndex = 20;
+            this.ktra_label_2.Text = "Chương 3";
+            this.ktra_label_2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.ktra_label_2.Visible = false;
+            // 
             // Form_kiemtra
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -420,12 +421,11 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1582, 753);
+            this.Controls.Add(this.ktra_label_2);
             this.Controls.Add(this.ktra_panel_kiemtra);
             this.Controls.Add(this.ktra_label_chuong);
-            this.Controls.Add(this.ktra_label_cogoiy);
             this.Controls.Add(this.ktra_pictureBox2);
             this.Controls.Add(this.ktra_label_conclude2);
-            this.Controls.Add(this.ktra_label_conclude);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.ktra_pictureBox_back);
             this.Controls.Add(this.ktra_button_batdaulambai);
@@ -478,9 +478,7 @@
         private System.Windows.Forms.PictureBox pictureBoxQues;
         private System.Windows.Forms.Button buttonNext;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label ktra_label_conclude;
         private System.Windows.Forms.Label ktra_label_conclude2;
-        private System.Windows.Forms.Label ktra_label_cogoiy;
         private System.Windows.Forms.Label ktra_label_chuong;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
@@ -488,5 +486,6 @@
         private System.Windows.Forms.PictureBox ktra_pictureBox2;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
         private System.Windows.Forms.PictureBox pictureBoxHint;
+        private System.Windows.Forms.Label ktra_label_2;
     }
 }

@@ -45,10 +45,7 @@ namespace doancuoiki
             ktra_button_chuong2.BackColor = Color.Green;
             ktra_button_chuong3.BackColor = Color.Green;
             ktra_button_chuong4.BackColor = Color.Green;
-            ktra_button_chuong5.BackColor = Color.Green;
-
-            ktra_label_conclude.Visible = false;
-            ktra_label_conclude2.Visible = false;
+            ktra_button_chuong5.BackColor = Color.Green;  
 
             ktra_label_chuong.Visible = false;
             ktra_pictureBox2.Visible = false;
@@ -101,6 +98,7 @@ namespace doancuoiki
                 
                 ktra_label_conclude2.Visible = true;
                 ktra_label_conclude2.Text = ktra_label_chuong.Text = "Chương 1";
+                ktra_label_2.Text = "Ôn tập và bổ sung về phân số. \r\nGiải toán liên quan đến tỉ lệ. \r\nBảng đơn vị đo diện tích";
             }
         }
 
@@ -118,6 +116,7 @@ namespace doancuoiki
 
                 ktra_label_conclude2.Visible = true;
                 ktra_label_conclude2.Text = ktra_label_chuong.Text = "Chương 2";
+                ktra_label_2.Text = "Số thập phân. \r\nCác phép tính với số thập phân";
             }
         }
 
@@ -134,6 +133,7 @@ namespace doancuoiki
 
                 ktra_label_conclude2.Visible = true;
                 ktra_label_conclude2.Text = ktra_label_chuong.Text = "Chương 3";
+                ktra_label_2.Text = "Hình học";
             }
         }
 
@@ -150,6 +150,7 @@ namespace doancuoiki
 
                 ktra_label_conclude2.Visible = true;
                 ktra_label_conclude2.Text = ktra_label_chuong.Text = "Chương 4";
+                ktra_label_2.Text = "Số đo thời gian.\r\n Toán chuyển động đều";
             }
         }
 
@@ -167,6 +168,7 @@ namespace doancuoiki
 
                 ktra_label_conclude2.Visible = true;
                 ktra_label_conclude2.Text = ktra_label_chuong.Text = "Chương 5";
+                ktra_label_2.Text = "Ôn tập";
             }
         }
 
@@ -180,6 +182,7 @@ namespace doancuoiki
             }
             else
             {
+                flowLayoutPanel1.Visible = false;
                 if (radioButtonA.Checked == true) { strTraLoi[num_ques] = "A"; }
                 else if (radioButtonB.Checked == true){ strTraLoi[num_ques] = "B"; }
                 else if (radioButtonC.Checked == true) { strTraLoi[num_ques] = "C"; }
