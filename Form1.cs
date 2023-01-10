@@ -68,7 +68,9 @@ namespace doancuoiki
 
         private void main_pictureBox_luyentap_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            Form_luyentap f4 = new Form_luyentap();
+            f4.ShowDialog();
         }
 
         private void buttonExitAdd_Click(object sender, EventArgs e)
