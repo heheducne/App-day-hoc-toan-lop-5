@@ -89,7 +89,7 @@
             this.main_panel_ho_va_ten.Controls.Add(this.label3);
             this.main_panel_ho_va_ten.Controls.Add(this.label2);
             this.main_panel_ho_va_ten.Controls.Add(this.label1);
-            this.main_panel_ho_va_ten.Location = new System.Drawing.Point(588, 197);
+            this.main_panel_ho_va_ten.Location = new System.Drawing.Point(540, 197);
             this.main_panel_ho_va_ten.Name = "main_panel_ho_va_ten";
             this.main_panel_ho_va_ten.Size = new System.Drawing.Size(550, 350);
             this.main_panel_ho_va_ten.TabIndex = 0;
@@ -201,7 +201,7 @@
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 79.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.Gold;
-            this.label6.Location = new System.Drawing.Point(212, 22);
+            this.label6.Location = new System.Drawing.Point(200, 22);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(1187, 152);
             this.label6.TabIndex = 1;
@@ -317,7 +317,7 @@
             this.main_panel_taohocsinhmoi.Controls.Add(this.label12);
             this.main_panel_taohocsinhmoi.Controls.Add(this.label13);
             this.main_panel_taohocsinhmoi.Controls.Add(this.label14);
-            this.main_panel_taohocsinhmoi.Location = new System.Drawing.Point(588, 197);
+            this.main_panel_taohocsinhmoi.Location = new System.Drawing.Point(540, 197);
             this.main_panel_taohocsinhmoi.Name = "main_panel_taohocsinhmoi";
             this.main_panel_taohocsinhmoi.Size = new System.Drawing.Size(550, 350);
             this.main_panel_taohocsinhmoi.TabIndex = 10;
@@ -435,7 +435,7 @@
             this.main_pictureBox_start.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.main_pictureBox_start.Location = new System.Drawing.Point(672, 288);
             this.main_pictureBox_start.Name = "main_pictureBox_start";
-            this.main_pictureBox_start.Size = new System.Drawing.Size(296, 310);
+            this.main_pictureBox_start.Size = new System.Drawing.Size(260, 310);
             this.main_pictureBox_start.TabIndex = 12;
             this.main_pictureBox_start.TabStop = false;
             this.main_pictureBox_start.Click += new System.EventHandler(this.main_pictureBox_start_Click);

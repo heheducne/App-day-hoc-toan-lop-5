@@ -196,8 +196,9 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.lythuyet_button_danhdau = new System.Windows.Forms.Button();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.lythuyet_pictureBox_danhdau = new System.Windows.Forms.PictureBox();
+            this.label6 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.lythuyet_pictureBox_back)).BeginInit();
             this.lythuyet_panel_list.SuspendLayout();
             this.panel51.SuspendLayout();
@@ -300,6 +301,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lythuyet_pictureBox_danhdau)).BeginInit();
             this.SuspendLayout();
             // 
             // lythuyet_label_top
@@ -2242,17 +2244,6 @@
     " đơn vị đo diện tích";
             this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // lythuyet_button_danhdau
-            // 
-            this.lythuyet_button_danhdau.BackColor = System.Drawing.Color.Chartreuse;
-            this.lythuyet_button_danhdau.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lythuyet_button_danhdau.Location = new System.Drawing.Point(657, 116);
-            this.lythuyet_button_danhdau.Name = "lythuyet_button_danhdau";
-            this.lythuyet_button_danhdau.Size = new System.Drawing.Size(110, 35);
-            this.lythuyet_button_danhdau.TabIndex = 11;
-            this.lythuyet_button_danhdau.Text = "Đánh dấu";
-            this.lythuyet_button_danhdau.UseVisualStyleBackColor = false;
-            // 
             // flowLayoutPanel1
             // 
             this.flowLayoutPanel1.AutoScroll = true;
@@ -2260,6 +2251,27 @@
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Size = new System.Drawing.Size(952, 597);
             this.flowLayoutPanel1.TabIndex = 12;
+            // 
+            // lythuyet_pictureBox_danhdau
+            // 
+            this.lythuyet_pictureBox_danhdau.BackColor = System.Drawing.Color.Transparent;
+            this.lythuyet_pictureBox_danhdau.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("lythuyet_pictureBox_danhdau.BackgroundImage")));
+            this.lythuyet_pictureBox_danhdau.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.lythuyet_pictureBox_danhdau.Location = new System.Drawing.Point(618, 12);
+            this.lythuyet_pictureBox_danhdau.Name = "lythuyet_pictureBox_danhdau";
+            this.lythuyet_pictureBox_danhdau.Size = new System.Drawing.Size(168, 141);
+            this.lythuyet_pictureBox_danhdau.TabIndex = 13;
+            this.lythuyet_pictureBox_danhdau.TabStop = false;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.PaleTurquoise;
+            this.label6.Location = new System.Drawing.Point(662, 110);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(77, 16);
+            this.label6.TabIndex = 14;
+            this.label6.Text = "ĐÁNH DẤU";
             // 
             // Form_lythuyet
             // 
@@ -2269,8 +2281,9 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1582, 753);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.lythuyet_pictureBox_danhdau);
             this.Controls.Add(this.flowLayoutPanel1);
-            this.Controls.Add(this.lythuyet_button_danhdau);
             this.Controls.Add(this.lythuyet_panel_list);
             this.Controls.Add(this.lythuyet_pictureBox_back);
             this.Controls.Add(this.lythuyet_label_top);
@@ -2434,6 +2447,7 @@
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lythuyet_pictureBox_danhdau)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -2608,7 +2622,8 @@
         private System.Windows.Forms.Label label54;
         private System.Windows.Forms.Label label53;
         private System.Windows.Forms.Label label52;
-        private System.Windows.Forms.Button lythuyet_button_danhdau;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+        private System.Windows.Forms.PictureBox lythuyet_pictureBox_danhdau;
+        private System.Windows.Forms.Label label6;
     }
 }
