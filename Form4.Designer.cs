@@ -90,7 +90,7 @@
             this.ktra_button_tracnghiem.Name = "ktra_button_tracnghiem";
             this.ktra_button_tracnghiem.Size = new System.Drawing.Size(360, 187);
             this.ktra_button_tracnghiem.TabIndex = 1;
-            this.ktra_button_tracnghiem.Text = "TRẮC NGHIỆM\r\n\r\n10 câu hỏi - 15 phút";
+            this.ktra_button_tracnghiem.Text = "TRẮC NGHIỆM\r\n\r\n10 câu hỏi";
             this.ktra_button_tracnghiem.UseVisualStyleBackColor = false;
             this.ktra_button_tracnghiem.Click += new System.EventHandler(this.ktra_button_tracnghiem_Click);
             // 
@@ -237,9 +237,9 @@
             this.ktra_panel_kiemtra.Controls.Add(this.pictureBoxHint);
             this.ktra_panel_kiemtra.Controls.Add(this.pictureBoxAns);
             this.ktra_panel_kiemtra.Controls.Add(this.pictureBoxQues);
-            this.ktra_panel_kiemtra.Location = new System.Drawing.Point(53, 126);
+            this.ktra_panel_kiemtra.Location = new System.Drawing.Point(-1, 126);
             this.ktra_panel_kiemtra.Name = "ktra_panel_kiemtra";
-            this.ktra_panel_kiemtra.Size = new System.Drawing.Size(1460, 631);
+            this.ktra_panel_kiemtra.Size = new System.Drawing.Size(1590, 634);
             this.ktra_panel_kiemtra.TabIndex = 15;
             this.ktra_panel_kiemtra.Visible = false;
             // 
@@ -247,7 +247,7 @@
             // 
             this.buttonNext.BackColor = System.Drawing.Color.Lime;
             this.buttonNext.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonNext.Location = new System.Drawing.Point(1375, 472);
+            this.buttonNext.Location = new System.Drawing.Point(1499, 475);
             this.buttonNext.Name = "buttonNext";
             this.buttonNext.Size = new System.Drawing.Size(82, 156);
             this.buttonNext.TabIndex = 7;
@@ -259,7 +259,7 @@
             // 
             this.radioButtonD.AutoSize = true;
             this.radioButtonD.BackColor = System.Drawing.Color.Transparent;
-            this.radioButtonD.Location = new System.Drawing.Point(1283, 293);
+            this.radioButtonD.Location = new System.Drawing.Point(1314, 280);
             this.radioButtonD.MinimumSize = new System.Drawing.Size(30, 30);
             this.radioButtonD.Name = "radioButtonD";
             this.radioButtonD.Size = new System.Drawing.Size(30, 30);
@@ -271,7 +271,7 @@
             // 
             this.radioButtonC.AutoSize = true;
             this.radioButtonC.BackColor = System.Drawing.Color.Transparent;
-            this.radioButtonC.Location = new System.Drawing.Point(1283, 226);
+            this.radioButtonC.Location = new System.Drawing.Point(1314, 213);
             this.radioButtonC.MinimumSize = new System.Drawing.Size(30, 30);
             this.radioButtonC.Name = "radioButtonC";
             this.radioButtonC.Size = new System.Drawing.Size(30, 30);
@@ -283,7 +283,7 @@
             // 
             this.radioButtonB.AutoSize = true;
             this.radioButtonB.BackColor = System.Drawing.Color.Transparent;
-            this.radioButtonB.Location = new System.Drawing.Point(1283, 162);
+            this.radioButtonB.Location = new System.Drawing.Point(1314, 149);
             this.radioButtonB.MinimumSize = new System.Drawing.Size(30, 30);
             this.radioButtonB.Name = "radioButtonB";
             this.radioButtonB.Size = new System.Drawing.Size(30, 30);
@@ -295,7 +295,7 @@
             // 
             this.radioButtonA.AutoSize = true;
             this.radioButtonA.BackColor = System.Drawing.Color.Transparent;
-            this.radioButtonA.Location = new System.Drawing.Point(1283, 97);
+            this.radioButtonA.Location = new System.Drawing.Point(1314, 84);
             this.radioButtonA.MinimumSize = new System.Drawing.Size(30, 30);
             this.radioButtonA.Name = "radioButtonA";
             this.radioButtonA.Size = new System.Drawing.Size(30, 30);
@@ -316,7 +316,7 @@
             // pictureBoxAns
             // 
             this.pictureBoxAns.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxAns.Image")));
-            this.pictureBoxAns.Location = new System.Drawing.Point(1322, 57);
+            this.pictureBoxAns.Location = new System.Drawing.Point(1353, 44);
             this.pictureBoxAns.Name = "pictureBoxAns";
             this.pictureBoxAns.Size = new System.Drawing.Size(104, 306);
             this.pictureBoxAns.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -327,7 +327,7 @@
             // 
             this.pictureBoxQues.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pictureBoxQues.ErrorImage")));
             this.pictureBoxQues.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxQues.Image")));
-            this.pictureBoxQues.Location = new System.Drawing.Point(32, 70);
+            this.pictureBoxQues.Location = new System.Drawing.Point(0, 57);
             this.pictureBoxQues.Name = "pictureBoxQues";
             this.pictureBoxQues.Size = new System.Drawing.Size(680, 293);
             this.pictureBoxQues.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -414,7 +414,7 @@
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.GhostWhite;
-            this.label4.Location = new System.Drawing.Point(36, 18);
+            this.label4.Location = new System.Drawing.Point(4, 5);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(145, 36);
             this.label4.TabIndex = 10;
@@ -426,7 +426,7 @@
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.GhostWhite;
-            this.label5.Location = new System.Drawing.Point(1182, 18);
+            this.label5.Location = new System.Drawing.Point(1213, 5);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(214, 36);
             this.label5.TabIndex = 11;
@@ -436,11 +436,11 @@
             // 
             this.ktra_label_chuong.AutoSize = true;
             this.ktra_label_chuong.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.ktra_label_chuong.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ktra_label_chuong.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ktra_label_chuong.ForeColor = System.Drawing.Color.Red;
             this.ktra_label_chuong.Location = new System.Drawing.Point(64, 75);
             this.ktra_label_chuong.Name = "ktra_label_chuong";
-            this.ktra_label_chuong.Size = new System.Drawing.Size(87, 20);
+            this.ktra_label_chuong.Size = new System.Drawing.Size(71, 16);
             this.ktra_label_chuong.TabIndex = 19;
             this.ktra_label_chuong.Text = "Chương 1";
             this.ktra_label_chuong.Visible = false;
