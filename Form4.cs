@@ -46,7 +46,6 @@ namespace doancuoiki
             ktra_button_chuong3.BackColor = Color.Green;
             ktra_button_chuong4.BackColor = Color.Green;
             ktra_button_chuong5.BackColor = Color.Green;
-            ktra_button_allchuong.BackColor = Color.Green;
 
             ktra_label_conclude.Visible = false;
             ktra_label_conclude2.Visible = false;
@@ -99,7 +98,6 @@ namespace doancuoiki
                 ktra_button_chuong3.BackColor = Color.Green;
                 ktra_button_chuong4.BackColor = Color.Green;
                 ktra_button_chuong5.BackColor = Color.Green;
-                ktra_button_allchuong.BackColor = Color.Green;
                 
                 ktra_label_conclude2.Visible = true;
                 ktra_label_conclude2.Text = ktra_label_chuong.Text = "Chương 1";
@@ -117,7 +115,6 @@ namespace doancuoiki
                 ktra_button_chuong3.BackColor = Color.Green;
                 ktra_button_chuong4.BackColor = Color.Green;
                 ktra_button_chuong5.BackColor = Color.Green;
-                ktra_button_allchuong.BackColor = Color.Green;
 
                 ktra_label_conclude2.Visible = true;
                 ktra_label_conclude2.Text = ktra_label_chuong.Text = "Chương 2";
@@ -134,7 +131,6 @@ namespace doancuoiki
                 ktra_button_chuong1.BackColor = Color.Green;
                 ktra_button_chuong4.BackColor = Color.Green;
                 ktra_button_chuong5.BackColor = Color.Green;
-                ktra_button_allchuong.BackColor = Color.Green;
 
                 ktra_label_conclude2.Visible = true;
                 ktra_label_conclude2.Text = ktra_label_chuong.Text = "Chương 3";
@@ -151,7 +147,6 @@ namespace doancuoiki
                 ktra_button_chuong3.BackColor = Color.Green;
                 ktra_button_chuong1.BackColor = Color.Green;
                 ktra_button_chuong5.BackColor = Color.Green;
-                ktra_button_allchuong.BackColor = Color.Green;
 
                 ktra_label_conclude2.Visible = true;
                 ktra_label_conclude2.Text = ktra_label_chuong.Text = "Chương 4";
@@ -169,29 +164,13 @@ namespace doancuoiki
                 ktra_button_chuong3.BackColor = Color.Green;
                 ktra_button_chuong4.BackColor = Color.Green;
                 ktra_button_chuong1.BackColor = Color.Green;
-                ktra_button_allchuong.BackColor = Color.Green;
 
                 ktra_label_conclude2.Visible = true;
                 ktra_label_conclude2.Text = ktra_label_chuong.Text = "Chương 5";
             }
         }
 
-        private void ktra_button_allchuong_Click(object sender, EventArgs e)
-        {
-            if (flag_chuong != 6)
-            {
-                ktra_button_allchuong.BackColor = Color.Red;
-                flag_chuong = 6;
-                ktra_button_chuong2.BackColor = Color.Green;
-                ktra_button_chuong3.BackColor = Color.Green;
-                ktra_button_chuong4.BackColor = Color.Green;
-                ktra_button_chuong5.BackColor = Color.Green;
-                ktra_button_chuong1.BackColor = Color.Green;
 
-                ktra_label_conclude2.Visible = true;
-                ktra_label_conclude2.Text = ktra_label_chuong.Text = "Tất cả";
-            }
-        }
 
         private void buttonNext_Click(object sender, EventArgs e)
         {
