@@ -235,6 +235,7 @@ namespace doancuoiki
             ktra_label_2.Visible = true;
             num_ques = 1;
             panelScore.Visible = false;
+            ktra_pictureBox_back.Visible = true;
         }
     }
 }

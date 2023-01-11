@@ -37,6 +37,7 @@ namespace doancuoiki
 
         }
         int check_baihoc = 0;
+        
         private void panel2_Click(object sender, EventArgs e)
         {
             pictureBox2.Visible = true;
@@ -44,6 +45,10 @@ namespace doancuoiki
             lythuyet_label_top.Text = label1.Text;
             lythuyet_label_top.Font = new Font("Microsoft Sans Serif", 20);
             check_baihoc = 1;
+            DateTime tgian = DateTime.Now;
+            lythuyet_chuong.Text += "Chương 1\r\n\r\n";
+            lythuyet_thoigian.Text += (tgian.ToString()+"\r\n\r\n");
+            lythuyet_baihoc.Text += "Ôn tập: Khái niệm về phân số\r\n- Tính chất cơ bản của phân số\r\n";
         }
 
         private void panel3_Click(object sender, EventArgs e)
@@ -53,6 +58,10 @@ namespace doancuoiki
             lythuyet_label_top.Text = label3.Text;
             lythuyet_label_top.Font = new Font("Microsoft Sans Serif", 20);
             check_baihoc = 2;
+            DateTime tgian = DateTime.Now;
+            lythuyet_chuong.Text += "Chương 1\r\n\r\n";
+            lythuyet_thoigian.Text += (tgian.ToString() + "\r\n\r\n");
+            lythuyet_baihoc.Text += "Ôn tập:\r\nSo sánh hai phân số\r\n";
         }
 
         private void panel4_Click(object sender, EventArgs e)
@@ -62,6 +71,10 @@ namespace doancuoiki
             lythuyet_label_top.Text = label4.Text;
             lythuyet_label_top.Font = new Font("Microsoft Sans Serif", 20);
             check_baihoc = 3;
+            DateTime tgian = DateTime.Now;
+            lythuyet_chuong.Text += "Chương 1\r\n\r\n";
+            lythuyet_thoigian.Text += (tgian.ToString() + "\r\n\r\n");
+            lythuyet_baihoc.Text += "Phân số thập phân\r\n";
         }
 
         private void panel5_Click(object sender, EventArgs e)
@@ -71,6 +84,10 @@ namespace doancuoiki
             lythuyet_label_top.Text = label5.Text;
             lythuyet_label_top.Font = new Font("Microsoft Sans Serif", 20);
             check_baihoc = 4;
+            DateTime tgian = DateTime.Now;
+            lythuyet_chuong.Text += "Chương 1\r\n\r\n";
+            lythuyet_thoigian.Text += (tgian.ToString() + "\r\n\r\n");
+            lythuyet_baihoc.Text += "Ôn tập:\r\nPhép cộng và phép trừ hai phân số\r\n";
         }
 
         private void panel6_Click(object sender, EventArgs e)
@@ -80,6 +97,10 @@ namespace doancuoiki
             lythuyet_label_top.Text = label7.Text;
             lythuyet_label_top.Font = new Font("Microsoft Sans Serif", 20);
             check_baihoc = 5;
+            DateTime tgian = DateTime.Now;
+            lythuyet_chuong.Text += "Chương 1\r\n\r\n";
+            lythuyet_thoigian.Text += (tgian.ToString() + "\r\n\r\n");
+            lythuyet_baihoc.Text += "Ôn tập:\r\nPhép nhân và phép chia hai phân số\r\n";
         }
 
         private void panel7_Click(object sender, EventArgs e)
@@ -89,6 +110,10 @@ namespace doancuoiki
             lythuyet_label_top.Text = label8.Text;
             lythuyet_label_top.Font = new Font("Microsoft Sans Serif", 20);
             check_baihoc = 6;
+            DateTime tgian = DateTime.Now;
+            lythuyet_chuong.Text += "Chương 1\r\n\r\n";
+            lythuyet_thoigian.Text += (tgian.ToString() + "\r\n\r\n");
+            lythuyet_baihoc.Text += "Hỗn số\r\n";
         }
 
         private void panel8_Click(object sender, EventArgs e)
@@ -98,6 +123,10 @@ namespace doancuoiki
             lythuyet_label_top.Text = label9.Text;
             lythuyet_label_top.Font = new Font("Microsoft Sans Serif", 20);
             check_baihoc = 7;
+            DateTime tgian = DateTime.Now;
+            lythuyet_chuong.Text += "Chương 1\r\n\r\n";
+            lythuyet_thoigian.Text += (tgian.ToString() + "\r\n\r\n");
+            lythuyet_baihoc.Text += "Ôn tập và bổ sung về giải toán\r\n";
         }
 
         private void panel9_Click(object sender, EventArgs e)
@@ -107,6 +136,10 @@ namespace doancuoiki
             lythuyet_label_top.Text = label11.Text;
             lythuyet_label_top.Font = new Font("Microsoft Sans Serif", 20);
             check_baihoc = 8;
+            DateTime tgian = DateTime.Now;
+            lythuyet_chuong.Text += "Chương 1\r\n\r\n";
+            lythuyet_thoigian.Text += (tgian.ToString() + "\r\n\r\n");
+            lythuyet_baihoc.Text += "Ôn tập:\r\nBảng đơn vị đo độ dài\r\n";
         }
 
         private void panel10_Click(object sender, EventArgs e)
@@ -116,6 +149,10 @@ namespace doancuoiki
             lythuyet_label_top.Text = label12.Text;
             lythuyet_label_top.Font = new Font("Microsoft Sans Serif", 20);
             check_baihoc = 9;
+            DateTime tgian = DateTime.Now;
+            lythuyet_chuong.Text += "Chương 1\r\n\r\n";
+            lythuyet_thoigian.Text += (tgian.ToString() + "\r\n\r\n");
+            lythuyet_baihoc.Text += "Ôn tập:\r\nBảng đơn vị đo khối lượng\r\n";
         }
 
         private void panel11_Click(object sender, EventArgs e)
@@ -125,6 +162,10 @@ namespace doancuoiki
             lythuyet_label_top.Text = label13.Text;
             lythuyet_label_top.Font = new Font("Microsoft Sans Serif", 20);
             check_baihoc = 10;
+            DateTime tgian = DateTime.Now;
+            lythuyet_chuong.Text += "Chương 1\r\n\r\n";
+            lythuyet_thoigian.Text += (tgian.ToString() + "\r\n\r\n");
+            lythuyet_baihoc.Text += "Đề-ca-mét-vuông.\r\nHéc-tô-mét-vuông. Héc -ta.\r\n";
         }
 
         private void panel12_Click(object sender, EventArgs e)
@@ -134,6 +175,10 @@ namespace doancuoiki
             lythuyet_label_top.Text = label14.Text;
             lythuyet_label_top.Font = new Font("Microsoft Sans Serif", 20);
             check_baihoc = 11;
+            DateTime tgian = DateTime.Now;
+            lythuyet_chuong.Text += "Chương 1\r\n\r\n";
+            lythuyet_thoigian.Text += (tgian.ToString() + "\r\n\r\n");
+            lythuyet_baihoc.Text += "Mi-li-mét vuông.\r\nBảng đơn vị đo diện tích\r\n";
         }
 
         private void panel13_Click(object sender, EventArgs e)
@@ -143,6 +188,10 @@ namespace doancuoiki
             lythuyet_label_top.Text = label15.Text;
             lythuyet_label_top.Font = new Font("Microsoft Sans Serif", 20);
             check_baihoc = 12;
+            DateTime tgian = DateTime.Now;
+            lythuyet_chuong.Text += "Chương 2\r\n\r\n";
+            lythuyet_thoigian.Text += (tgian.ToString() + "\r\n\r\n");
+            lythuyet_baihoc.Text += "Khái niệm số thập phân\r\n";
         }
 
         private void panel14_Click(object sender, EventArgs e)
@@ -152,6 +201,10 @@ namespace doancuoiki
             lythuyet_label_top.Text = label18.Text;
             lythuyet_label_top.Font = new Font("Microsoft Sans Serif", 20);
             check_baihoc = 13;
+            DateTime tgian = DateTime.Now;
+            lythuyet_chuong.Text += "Chương 2\r\n\r\n";
+            lythuyet_thoigian.Text += (tgian.ToString() + "\r\n\r\n");
+            lythuyet_baihoc.Text += "Hàng của số thập phân.\r\nĐọc, viết số thập phân\r\n";
         }
 
         private void panel15_Click(object sender, EventArgs e)
@@ -161,6 +214,10 @@ namespace doancuoiki
             lythuyet_label_top.Text = label19.Text;
             lythuyet_label_top.Font = new Font("Microsoft Sans Serif", 20);
             check_baihoc = 14;
+            DateTime tgian = DateTime.Now;
+            lythuyet_chuong.Text += "Chương 2\r\n\r\n";
+            lythuyet_thoigian.Text += (tgian.ToString() + "\r\n\r\n");
+            lythuyet_baihoc.Text += "Số thập phân bằng nhau.\r\nSo sánh hai số thập phân\r\n";
         }
 
         private void panel16_Click(object sender, EventArgs e)
@@ -170,6 +227,10 @@ namespace doancuoiki
             lythuyet_label_top.Text = label20.Text;
             lythuyet_label_top.Font = new Font("Microsoft Sans Serif", 20);
             check_baihoc = 15;
+            DateTime tgian = DateTime.Now;
+            lythuyet_chuong.Text += "Chương 2\r\n\r\n";
+            lythuyet_thoigian.Text += (tgian.ToString() + "\r\n\r\n");
+            lythuyet_baihoc.Text += "Viết các số đo độ dài\r\ndưới dạng số thập phân\r\n";
         }
 
         private void panel17_Click(object sender, EventArgs e)
@@ -179,6 +240,10 @@ namespace doancuoiki
             lythuyet_label_top.Text = label21.Text;
             lythuyet_label_top.Font = new Font("Microsoft Sans Serif", 20);
             check_baihoc = 16;
+            DateTime tgian = DateTime.Now;
+            lythuyet_chuong.Text += "Chương 2\r\n\r\n";
+            lythuyet_thoigian.Text += (tgian.ToString() + "\r\n\r\n");
+            lythuyet_baihoc.Text += "Viết các số đo khối lượng\r\ndưới dạng số thập phân\r\n";
         }
 
         private void panel18_Click(object sender, EventArgs e)
@@ -188,6 +253,10 @@ namespace doancuoiki
             lythuyet_label_top.Text = label22.Text;
             lythuyet_label_top.Font = new Font("Microsoft Sans Serif", 20);
             check_baihoc = 17;
+            DateTime tgian = DateTime.Now;
+            lythuyet_chuong.Text += "Chương 2\r\n\r\n";
+            lythuyet_thoigian.Text += (tgian.ToString() + "\r\n\r\n");
+            lythuyet_baihoc.Text += "Viết các số đo diện tích\r\ndưới dạng số thập phân\r\n";
         }
 
         private void panel19_Click(object sender, EventArgs e)
@@ -197,6 +266,10 @@ namespace doancuoiki
             lythuyet_label_top.Text = label23.Text;
             lythuyet_label_top.Font = new Font("Microsoft Sans Serif", 20);
             check_baihoc = 18;
+            DateTime tgian = DateTime.Now;
+            lythuyet_chuong.Text += "Chương 2\r\n\r\n";
+            lythuyet_thoigian.Text += (tgian.ToString() + "\r\n\r\n");
+            lythuyet_baihoc.Text += "Cộng hai số thập phân.\r\nTổng nhiều số thập phân\r\n";
         }
 
         private void panel20_Click(object sender, EventArgs e)
@@ -206,6 +279,10 @@ namespace doancuoiki
             lythuyet_label_top.Text = label29.Text;
             lythuyet_label_top.Font = new Font("Microsoft Sans Serif", 20);
             check_baihoc = 19;
+            DateTime tgian = DateTime.Now;
+            lythuyet_chuong.Text += "Chương 2\r\n\r\n";
+            lythuyet_thoigian.Text += (tgian.ToString() + "\r\n\r\n");
+            lythuyet_baihoc.Text += "Trừ hai số thập phân\r\n";
         }
 
         private void panel21_Click(object sender, EventArgs e)
@@ -215,6 +292,10 @@ namespace doancuoiki
             lythuyet_label_top.Text = label30.Text;
             lythuyet_label_top.Font = new Font("Microsoft Sans Serif", 20);
             check_baihoc = 20;
+            DateTime tgian = DateTime.Now;
+            lythuyet_chuong.Text += "Chương 2\r\n\r\n";
+            lythuyet_thoigian.Text += (tgian.ToString() + "\r\n\r\n");
+            lythuyet_baihoc.Text += "Nhân một số thập phân\r\nvới một số tự nhiên\r\n";
         }
 
         private void panel22_Click(object sender, EventArgs e)
@@ -224,6 +305,10 @@ namespace doancuoiki
             lythuyet_label_top.Text = label31.Text;
             lythuyet_label_top.Font = new Font("Microsoft Sans Serif", 20);
             check_baihoc = 21;
+            DateTime tgian = DateTime.Now;
+            lythuyet_chuong.Text += "Chương 2\r\n\r\n";
+            lythuyet_thoigian.Text += (tgian.ToString() + "\r\n\r\n");
+            lythuyet_baihoc.Text += "Nhân một số thập phân\r\nvới 10, 100, 1000, ...\r\n";
         }
 
         private void panel23_Click(object sender, EventArgs e)
@@ -233,6 +318,10 @@ namespace doancuoiki
             lythuyet_label_top.Text = label32.Text;
             lythuyet_label_top.Font = new Font("Microsoft Sans Serif", 20);
             check_baihoc = 22;
+            DateTime tgian = DateTime.Now;
+            lythuyet_chuong.Text += "Chương 2\r\n\r\n";
+            lythuyet_thoigian.Text += (tgian.ToString() + "\r\n\r\n");
+            lythuyet_baihoc.Text += "Nhân một số thập phân\r\nvới một số thập phân\r\n";
         }
 
         private void panel24_Click(object sender, EventArgs e)
@@ -242,6 +331,10 @@ namespace doancuoiki
             lythuyet_label_top.Text = label33.Text;
             lythuyet_label_top.Font = new Font("Microsoft Sans Serif", 20);
             check_baihoc = 23;
+            DateTime tgian = DateTime.Now;
+            lythuyet_chuong.Text += "Chương 2\r\n\r\n";
+            lythuyet_thoigian.Text += (tgian.ToString() + "\r\n\r\n");
+            lythuyet_baihoc.Text += "Chia một số thập phân\r\ncho một số tự nhiên\r\n";
         }
 
         private void panel25_Click(object sender, EventArgs e)
@@ -251,6 +344,10 @@ namespace doancuoiki
             lythuyet_label_top.Text = label34.Text;
             lythuyet_label_top.Font = new Font("Microsoft Sans Serif", 20);
             check_baihoc = 24;
+            DateTime tgian = DateTime.Now;
+            lythuyet_chuong.Text += "Chương 2\r\n\r\n";
+            lythuyet_thoigian.Text += (tgian.ToString() + "\r\n\r\n");
+            lythuyet_baihoc.Text += "Chia một số thập phân\r\ncho 10, 100, 1000, ...\r\n";
         }
 
         private void panel26_Click(object sender, EventArgs e)
@@ -260,6 +357,10 @@ namespace doancuoiki
             lythuyet_label_top.Text = label35.Text;
             lythuyet_label_top.Font = new Font("Microsoft Sans Serif", 20);
             check_baihoc = 25;
+            DateTime tgian = DateTime.Now;
+            lythuyet_chuong.Text += "Chương 2\r\n\r\n";
+            lythuyet_thoigian.Text += (tgian.ToString() + "\r\n\r\n");
+            lythuyet_baihoc.Text += "Chia một số tự nhiên cho một số tự nhiên\r\nmà thương tìm được là một số thập phân\r\n";
         }
 
         private void panel27_Click(object sender, EventArgs e)
@@ -269,6 +370,10 @@ namespace doancuoiki
             lythuyet_label_top.Text = label36.Text;
             lythuyet_label_top.Font = new Font("Microsoft Sans Serif", 20);
             check_baihoc = 26;
+            DateTime tgian = DateTime.Now;
+            lythuyet_chuong.Text += "Chương 2\r\n\r\n";
+            lythuyet_thoigian.Text += (tgian.ToString() + "\r\n\r\n");
+            lythuyet_baihoc.Text += "Chia một số tự nhiên\r\ncho một số thập phân\r\n";
         }
 
         private void panel28_Click(object sender, EventArgs e)
@@ -278,6 +383,10 @@ namespace doancuoiki
             lythuyet_label_top.Text = label37.Text;
             lythuyet_label_top.Font = new Font("Microsoft Sans Serif", 20);
             check_baihoc = 27;
+            DateTime tgian = DateTime.Now;
+            lythuyet_chuong.Text += "Chương 2\r\n\r\n";
+            lythuyet_thoigian.Text += (tgian.ToString() + "\r\n\r\n");
+            lythuyet_baihoc.Text += "Chia một số thập phân\r\ncho một số thập phân\r\n";
         }
 
         private void panel29_Click(object sender, EventArgs e)
@@ -287,6 +396,10 @@ namespace doancuoiki
             lythuyet_label_top.Text = label38.Text;
             lythuyet_label_top.Font = new Font("Microsoft Sans Serif", 20);
             check_baihoc = 28;
+            DateTime tgian = DateTime.Now;
+            lythuyet_chuong.Text += "Chương 2\r\n\r\n";
+            lythuyet_thoigian.Text += (tgian.ToString() + "\r\n\r\n");
+            lythuyet_baihoc.Text += "Tỉ số phần trăm.\r\nGiải toán về tỉ số phần trăm\r\n";
         }
 
         private void panel30_Click(object sender, EventArgs e)
@@ -296,6 +409,10 @@ namespace doancuoiki
             lythuyet_label_top.Text = label40.Text;
             lythuyet_label_top.Font = new Font("Microsoft Sans Serif", 20);
             check_baihoc = 29;
+            DateTime tgian = DateTime.Now;
+            lythuyet_chuong.Text += "Chương 3\r\n\r\n";
+            lythuyet_thoigian.Text += (tgian.ToString() + "\r\n\r\n");
+            lythuyet_baihoc.Text += "Hình tam giác - Diện tích hình tam giác\r\n";
         }
 
         private void panel31_Click(object sender, EventArgs e)
@@ -305,6 +422,10 @@ namespace doancuoiki
             lythuyet_label_top.Text = label41.Text;
             lythuyet_label_top.Font = new Font("Microsoft Sans Serif", 20);
             check_baihoc = 30;
+            DateTime tgian = DateTime.Now;
+            lythuyet_chuong.Text += "Chương 3\r\n\r\n";
+            lythuyet_thoigian.Text += (tgian.ToString() + "\r\n\r\n");
+            lythuyet_baihoc.Text += "Hình thang - Diện tích hình thang\r\n";
         }
 
         private void panel32_Click(object sender, EventArgs e)
@@ -314,6 +435,10 @@ namespace doancuoiki
             lythuyet_label_top.Text = label42.Text;
             lythuyet_label_top.Font = new Font("Microsoft Sans Serif", 20);
             check_baihoc = 31;
+            DateTime tgian = DateTime.Now;
+            lythuyet_chuong.Text += "Chương 3\r\n\r\n";
+            lythuyet_thoigian.Text += (tgian.ToString() + "\r\n\r\n");
+            lythuyet_baihoc.Text += "Hình tròn.\r\nĐường tròn - Chu vi hình tròn\r\n";
         }
 
         private void panel33_Click(object sender, EventArgs e)
@@ -323,6 +448,10 @@ namespace doancuoiki
             lythuyet_label_top.Text = label43.Text;
             lythuyet_label_top.Font = new Font("Microsoft Sans Serif", 20);
             check_baihoc = 32;
+            DateTime tgian = DateTime.Now;
+            lythuyet_chuong.Text += "Chương 3\r\n\r\n";
+            lythuyet_thoigian.Text += (tgian.ToString() + "\r\n\r\n");
+            lythuyet_baihoc.Text += "Diện tích hình tròn\r\n";
         }
 
         private void panel34_Click(object sender, EventArgs e)
@@ -332,6 +461,10 @@ namespace doancuoiki
             lythuyet_label_top.Text = label44.Text;
             lythuyet_label_top.Font = new Font("Microsoft Sans Serif", 20);
             check_baihoc = 33;
+            DateTime tgian = DateTime.Now;
+            lythuyet_chuong.Text += "Chương 3\r\n\r\n";
+            lythuyet_thoigian.Text += (tgian.ToString() + "\r\n\r\n");
+            lythuyet_baihoc.Text += "Luyện tập về tính diện tích\r\n";
         }
 
         private void panel35_Click(object sender, EventArgs e)
@@ -341,6 +474,10 @@ namespace doancuoiki
             lythuyet_label_top.Text = label45.Text;
             lythuyet_label_top.Font = new Font("Microsoft Sans Serif", 20);
             check_baihoc = 34;
+            DateTime tgian = DateTime.Now;
+            lythuyet_chuong.Text += "Chương 3\r\n\r\n";
+            lythuyet_thoigian.Text += (tgian.ToString() + "\r\n\r\n");
+            lythuyet_baihoc.Text += "Hình hộp chữ nhật.\r\nHình lập phương\r\n";
         }
 
         private void panel36_Click(object sender, EventArgs e)
@@ -350,6 +487,10 @@ namespace doancuoiki
             lythuyet_label_top.Text = label46.Text;
             lythuyet_label_top.Font = new Font("Microsoft Sans Serif", 20);
             check_baihoc = 35;
+            DateTime tgian = DateTime.Now;
+            lythuyet_chuong.Text += "Chương 3\r\n\r\n";
+            lythuyet_thoigian.Text += (tgian.ToString() + "\r\n\r\n");
+            lythuyet_baihoc.Text += "Diện tích xung quanh và diện tích toàn phần\r\ncủa hình hộp chữ nhật\r\n";
         }
 
         private void panel37_Click(object sender, EventArgs e)
@@ -359,6 +500,10 @@ namespace doancuoiki
             lythuyet_label_top.Text = label47.Text;
             lythuyet_label_top.Font = new Font("Microsoft Sans Serif", 20);
             check_baihoc = 36;
+            DateTime tgian = DateTime.Now;
+            lythuyet_chuong.Text += "Chương 3\r\n\r\n";
+            lythuyet_thoigian.Text += (tgian.ToString() + "\r\n\r\n");
+            lythuyet_baihoc.Text += "Diện tích xung quanh và diện tích toàn phần\r\ncủa hình lập phương\r\n";
         }
 
         private void panel38_Click(object sender, EventArgs e)
@@ -368,6 +513,10 @@ namespace doancuoiki
             lythuyet_label_top.Text = label48.Text;
             lythuyet_label_top.Font = new Font("Microsoft Sans Serif", 20);
             check_baihoc = 37;
+            DateTime tgian = DateTime.Now;
+            lythuyet_chuong.Text += "Chương 3\r\n\r\n";
+            lythuyet_thoigian.Text += (tgian.ToString() + "\r\n\r\n");
+            lythuyet_baihoc.Text += "Thể tích của một hình. Mét khối.\r\nXăng - ti - mét khối. Đề - xi - mét khối\r\n";
         }
 
         private void panel39_Click(object sender, EventArgs e)
@@ -377,6 +526,10 @@ namespace doancuoiki
             lythuyet_label_top.Text = label49.Text;
             lythuyet_label_top.Font = new Font("Microsoft Sans Serif", 20);
             check_baihoc = 38;
+            DateTime tgian = DateTime.Now;
+            lythuyet_chuong.Text += "Chương 3\r\n\r\n";
+            lythuyet_thoigian.Text += (tgian.ToString() + "\r\n\r\n");
+            lythuyet_baihoc.Text += "Thể tích hình hộp chữ nhật\r\n";
         }
 
         private void panel40_Click(object sender, EventArgs e)
@@ -386,6 +539,10 @@ namespace doancuoiki
             lythuyet_label_top.Text = label50.Text;
             lythuyet_label_top.Font = new Font("Microsoft Sans Serif", 20);
             check_baihoc = 39;
+            DateTime tgian = DateTime.Now;
+            lythuyet_chuong.Text += "Chương 3\r\n\r\n";
+            lythuyet_thoigian.Text += (tgian.ToString() + "\r\n\r\n");
+            lythuyet_baihoc.Text += "Thể tích hình lập phương\r\n";
         }
 
         private void panel41_Click(object sender, EventArgs e)
@@ -395,6 +552,10 @@ namespace doancuoiki
             lythuyet_label_top.Text = label55.Text;
             lythuyet_label_top.Font = new Font("Microsoft Sans Serif", 20);
             check_baihoc = 40;
+            DateTime tgian = DateTime.Now;
+            lythuyet_chuong.Text += "Chương 4\r\n\r\n";
+            lythuyet_thoigian.Text += (tgian.ToString() + "\r\n\r\n");
+            lythuyet_baihoc.Text += "Bảng đơn vị đo thời gian\r\n";
         }
 
         private void panel42_Click(object sender, EventArgs e)
@@ -404,6 +565,10 @@ namespace doancuoiki
             lythuyet_label_top.Text = label56.Text;
             lythuyet_label_top.Font = new Font("Microsoft Sans Serif", 20);
             check_baihoc = 41;
+            DateTime tgian = DateTime.Now;
+            lythuyet_chuong.Text += "Chương 4\r\n\r\n";
+            lythuyet_thoigian.Text += (tgian.ToString() + "\r\n\r\n");
+            lythuyet_baihoc.Text += "Cộng số đo thời gian\r\n";
         }
 
         private void panel43_Click(object sender, EventArgs e)
@@ -413,6 +578,10 @@ namespace doancuoiki
             lythuyet_label_top.Text = label57.Text;
             lythuyet_label_top.Font = new Font("Microsoft Sans Serif", 20);
             check_baihoc = 42;
+            DateTime tgian = DateTime.Now;
+            lythuyet_chuong.Text += "Chương 4\r\n\r\n";
+            lythuyet_thoigian.Text += (tgian.ToString() + "\r\n\r\n");
+            lythuyet_baihoc.Text += "Trừ số đo thời gian\r\n";
         }
 
         private void panel44_Click(object sender, EventArgs e)
@@ -422,6 +591,10 @@ namespace doancuoiki
             lythuyet_label_top.Text = label58.Text;
             lythuyet_label_top.Font = new Font("Microsoft Sans Serif", 20);
             check_baihoc = 43;
+            DateTime tgian = DateTime.Now;
+            lythuyet_chuong.Text += "Chương 4\r\n\r\n";
+            lythuyet_thoigian.Text += (tgian.ToString() + "\r\n\r\n");
+            lythuyet_baihoc.Text += "Nhân số đo thời gian với một số\r\n";
         }
 
         private void panel45_Click(object sender, EventArgs e)
@@ -431,6 +604,10 @@ namespace doancuoiki
             lythuyet_label_top.Text = label59.Text;
             lythuyet_label_top.Font = new Font("Microsoft Sans Serif", 20);
             check_baihoc = 44;
+            DateTime tgian = DateTime.Now;
+            lythuyet_chuong.Text += "Chương 4\r\n\r\n";
+            lythuyet_thoigian.Text += (tgian.ToString() + "\r\n\r\n");
+            lythuyet_baihoc.Text += "Chia số đo thời gian cho một số\r\n";
         }
 
         private void panel46_Click(object sender, EventArgs e)
@@ -440,6 +617,10 @@ namespace doancuoiki
             lythuyet_label_top.Text = label60.Text;
             lythuyet_label_top.Font = new Font("Microsoft Sans Serif", 20);
             check_baihoc = 45;
+            DateTime tgian = DateTime.Now;
+            lythuyet_chuong.Text += "Chương 4\r\n\r\n";
+            lythuyet_thoigian.Text += (tgian.ToString() + "\r\n\r\n");
+            lythuyet_baihoc.Text += "Vận tốc\r\n";
         }
 
         private void panel47_Click(object sender, EventArgs e)
@@ -449,6 +630,10 @@ namespace doancuoiki
             lythuyet_label_top.Text = label61.Text;
             lythuyet_label_top.Font = new Font("Microsoft Sans Serif", 20);
             check_baihoc = 46;
+            DateTime tgian = DateTime.Now;
+            lythuyet_chuong.Text += "Chương 4\r\n\r\n";
+            lythuyet_thoigian.Text += (tgian.ToString() + "\r\n\r\n");
+            lythuyet_baihoc.Text += "Quãng đường\r\n";
         }
 
         private void panel48_Click(object sender, EventArgs e)
@@ -458,6 +643,10 @@ namespace doancuoiki
             lythuyet_label_top.Text = label62.Text;
             lythuyet_label_top.Font = new Font("Microsoft Sans Serif", 20);
             check_baihoc = 47;
+            DateTime tgian = DateTime.Now;
+            lythuyet_chuong.Text += "Chương 4\r\n\r\n";
+            lythuyet_thoigian.Text += (tgian.ToString() + "\r\n\r\n");
+            lythuyet_baihoc.Text += "Thời gian\r\n";
         }
 
         private void panel49_Click(object sender, EventArgs e)
@@ -467,6 +656,10 @@ namespace doancuoiki
             lythuyet_label_top.Text = label64.Text;
             lythuyet_label_top.Font = new Font("Microsoft Sans Serif", 20);
             check_baihoc = 48;
+            DateTime tgian = DateTime.Now;
+            lythuyet_chuong.Text += "Chương 5\r\n\r\n";
+            lythuyet_thoigian.Text += (tgian.ToString() + "\r\n\r\n");
+            lythuyet_baihoc.Text += "Ôn tập về số tự nhiên, phân số,\r\nsố thập phân, số đo đại lượng\r\n";
         }
 
         private void panel50_Click(object sender, EventArgs e)
@@ -476,6 +669,10 @@ namespace doancuoiki
             lythuyet_label_top.Text = label65.Text;
             lythuyet_label_top.Font = new Font("Microsoft Sans Serif", 20);
             check_baihoc = 49;
+            DateTime tgian = DateTime.Now;
+            lythuyet_chuong.Text += "Chương 5\r\n\r\n";
+            lythuyet_thoigian.Text += (tgian.ToString() + "\r\n\r\n");
+            lythuyet_baihoc.Text += "Ôn tập: về các phép tính với\r\nsố tự nhiên, phân số, số thập phân\r\n";
         }
 
         private void panel51_Click(object sender, EventArgs e)
@@ -485,6 +682,10 @@ namespace doancuoiki
             lythuyet_label_top.Text = label66.Text;
             lythuyet_label_top.Font = new Font("Microsoft Sans Serif", 20);
             check_baihoc = 50;
+            DateTime tgian = DateTime.Now;
+            lythuyet_chuong.Text += "Chương 5\r\n\r\n";
+            lythuyet_thoigian.Text += (tgian.ToString() + "\r\n\r\n");
+            lythuyet_baihoc.Text += "Ôn tập về hình học\r\n";
         }
 
         private void lythuyet_pictureBox_back_Click(object sender, EventArgs e)
@@ -848,6 +1049,21 @@ namespace doancuoiki
 
 
             }
+        }
+        int his_check = 0;
+        private void lythuyet_pictureBox_history_Click(object sender, EventArgs e)
+        {
+            if(his_check==0)
+            {
+                lythuyet_panel_lichsu.Visible = true;
+                his_check = 1;
+            }
+            else
+            {
+                lythuyet_panel_lichsu.Visible = false;
+                his_check = 0;
+            }
+
         }
     }
 }
