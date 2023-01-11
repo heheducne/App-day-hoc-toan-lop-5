@@ -504,7 +504,7 @@
             this.AutoSize = true;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1582, 753);
+            this.ClientSize = new System.Drawing.Size(1600, 800);
             this.Controls.Add(this.ktra_panel_kiemtra);
             this.Controls.Add(this.ktra_label_2);
             this.Controls.Add(this.ktra_label_chuong);
@@ -520,6 +520,7 @@
             this.Controls.Add(this.ktra_button_chuong1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximumSize = new System.Drawing.Size(1600, 800);
             this.MinimumSize = new System.Drawing.Size(1600, 800);

@@ -301,6 +301,8 @@ namespace doancuoiki
             panelResult.Visible = true;
             labelTime.Text = ((2700-timePlay)/60).ToString()+":"+ ((2700 - timePlay) % 60).ToString();
             timePlay = 2700;
+            DateTime n = DateTime.Now;
+            de45p_label_realtime.Text = n.ToString();
             re();
         }
         private void button1_Click(object sender, EventArgs e)

@@ -153,6 +153,7 @@
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.flowLayoutPanelXephang = new System.Windows.Forms.FlowLayoutPanel();
             this.label2 = new System.Windows.Forms.Label();
+            this.de45p_label_realtime = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.de45p_panel_dethi.SuspendLayout();
@@ -730,7 +731,7 @@
             this.de45p_panel_thi.Controls.Add(this.label10);
             this.de45p_panel_thi.Location = new System.Drawing.Point(0, 0);
             this.de45p_panel_thi.Name = "de45p_panel_thi";
-            this.de45p_panel_thi.Size = new System.Drawing.Size(1580, 752);
+            this.de45p_panel_thi.Size = new System.Drawing.Size(1600, 805);
             this.de45p_panel_thi.TabIndex = 11;
             this.de45p_panel_thi.Visible = false;
             // 
@@ -738,6 +739,7 @@
             // 
             this.panelResult.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panelResult.BackgroundImage")));
             this.panelResult.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panelResult.Controls.Add(this.de45p_label_realtime);
             this.panelResult.Controls.Add(this.labelTime);
             this.panelResult.Controls.Add(this.buttonOK);
             this.panelResult.Controls.Add(this.label49);
@@ -755,7 +757,7 @@
             this.labelTime.BackColor = System.Drawing.Color.Transparent;
             this.labelTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelTime.ForeColor = System.Drawing.Color.OrangeRed;
-            this.labelTime.Location = new System.Drawing.Point(426, 327);
+            this.labelTime.Location = new System.Drawing.Point(426, 307);
             this.labelTime.Name = "labelTime";
             this.labelTime.Size = new System.Drawing.Size(141, 32);
             this.labelTime.TabIndex = 4;
@@ -778,7 +780,7 @@
             this.label49.AutoSize = true;
             this.label49.BackColor = System.Drawing.Color.Transparent;
             this.label49.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label49.Location = new System.Drawing.Point(188, 332);
+            this.label49.Location = new System.Drawing.Point(188, 307);
             this.label49.Name = "label49";
             this.label49.Size = new System.Drawing.Size(150, 32);
             this.label49.TabIndex = 2;
@@ -1515,13 +1517,24 @@
             this.label2.Text = "Lựa chọn một\r\nđề thi để xem \r\nxếp hạng";
             this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
+            // de45p_label_realtime
+            // 
+            this.de45p_label_realtime.AutoSize = true;
+            this.de45p_label_realtime.BackColor = System.Drawing.Color.Transparent;
+            this.de45p_label_realtime.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.de45p_label_realtime.Location = new System.Drawing.Point(230, 383);
+            this.de45p_label_realtime.Name = "de45p_label_realtime";
+            this.de45p_label_realtime.Size = new System.Drawing.Size(150, 32);
+            this.de45p_label_realtime.TabIndex = 5;
+            this.de45p_label_realtime.Text = "Thời gian:";
+            // 
             // Form_luyentap
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(1582, 753);
+            this.ClientSize = new System.Drawing.Size(1600, 800);
             this.Controls.Add(this.de45p_panel_thi);
             this.Controls.Add(this.flowLayoutPanelXephang);
             this.Controls.Add(this.label2);
@@ -1532,6 +1545,7 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.de45p_pictureBox_back);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximumSize = new System.Drawing.Size(1600, 800);
             this.MinimizeBox = false;
@@ -1682,5 +1696,6 @@
         private System.Windows.Forms.Label labelTime;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanelXephang;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label de45p_label_realtime;
     }
 }
