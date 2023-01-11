@@ -39,6 +39,11 @@
             this.ktra_button_batdaulambai = new System.Windows.Forms.Button();
             this.ktra_pictureBox_back = new System.Windows.Forms.PictureBox();
             this.ktra_panel_kiemtra = new System.Windows.Forms.Panel();
+            this.panelScore = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
+            this.labelScore = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.pictureBoxExitpanel = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBoxQues = new System.Windows.Forms.PictureBox();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
@@ -57,13 +62,10 @@
             this.ktra_label_chuong = new System.Windows.Forms.Label();
             this.ktra_pictureBox2 = new System.Windows.Forms.PictureBox();
             this.ktra_label_2 = new System.Windows.Forms.Label();
-            this.pictureBoxExitpanel = new System.Windows.Forms.PictureBox();
-            this.panelScore = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
-            this.labelScore = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.ktra_pictureBox_back)).BeginInit();
             this.ktra_panel_kiemtra.SuspendLayout();
+            this.panelScore.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxExitpanel)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxQues)).BeginInit();
             this.flowLayoutPanel1.SuspendLayout();
@@ -71,8 +73,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAns)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ktra_pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxExitpanel)).BeginInit();
-            this.panelScore.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -193,7 +193,7 @@
             // ktra_panel_kiemtra
             // 
             this.ktra_panel_kiemtra.AutoSize = true;
-            this.ktra_panel_kiemtra.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ktra_panel_kiemtra.BackgroundImage")));
+            this.ktra_panel_kiemtra.BackColor = System.Drawing.Color.ForestGreen;
             this.ktra_panel_kiemtra.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ktra_panel_kiemtra.Controls.Add(this.panelScore);
             this.ktra_panel_kiemtra.Controls.Add(this.pictureBoxExitpanel);
@@ -208,11 +208,71 @@
             this.ktra_panel_kiemtra.Controls.Add(this.radioButtonB);
             this.ktra_panel_kiemtra.Controls.Add(this.radioButtonA);
             this.ktra_panel_kiemtra.Controls.Add(this.pictureBoxAns);
-            this.ktra_panel_kiemtra.Location = new System.Drawing.Point(0, 124);
+            this.ktra_panel_kiemtra.Location = new System.Drawing.Point(0, 125);
             this.ktra_panel_kiemtra.Name = "ktra_panel_kiemtra";
-            this.ktra_panel_kiemtra.Size = new System.Drawing.Size(1590, 1245);
+            this.ktra_panel_kiemtra.Size = new System.Drawing.Size(1600, 679);
             this.ktra_panel_kiemtra.TabIndex = 15;
             this.ktra_panel_kiemtra.Visible = false;
+            // 
+            // panelScore
+            // 
+            this.panelScore.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panelScore.BackgroundImage")));
+            this.panelScore.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panelScore.Controls.Add(this.button1);
+            this.panelScore.Controls.Add(this.labelScore);
+            this.panelScore.Controls.Add(this.label2);
+            this.panelScore.Location = new System.Drawing.Point(491, 18);
+            this.panelScore.Name = "panelScore";
+            this.panelScore.Size = new System.Drawing.Size(652, 430);
+            this.panelScore.TabIndex = 22;
+            this.panelScore.Visible = false;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.PaleGreen;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(239, 343);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(202, 74);
+            this.button1.TabIndex = 2;
+            this.button1.Text = "Thoát";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // labelScore
+            // 
+            this.labelScore.AutoSize = true;
+            this.labelScore.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.labelScore.Font = new System.Drawing.Font("Microsoft Sans Serif", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelScore.Location = new System.Drawing.Point(282, 159);
+            this.labelScore.Name = "labelScore";
+            this.labelScore.Size = new System.Drawing.Size(110, 52);
+            this.labelScore.TabIndex = 1;
+            this.labelScore.Text = "4/20";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(266, 77);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(156, 38);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "Kết quả: ";
+            // 
+            // pictureBoxExitpanel
+            // 
+            this.pictureBoxExitpanel.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBoxExitpanel.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBoxExitpanel.BackgroundImage")));
+            this.pictureBoxExitpanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBoxExitpanel.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBoxExitpanel.Location = new System.Drawing.Point(1499, 3);
+            this.pictureBoxExitpanel.Name = "pictureBoxExitpanel";
+            this.pictureBoxExitpanel.Size = new System.Drawing.Size(81, 82);
+            this.pictureBoxExitpanel.TabIndex = 21;
+            this.pictureBoxExitpanel.TabStop = false;
+            this.pictureBoxExitpanel.Click += new System.EventHandler(this.pictureBoxExitpanel_Click);
             // 
             // panel1
             // 
@@ -402,7 +462,7 @@
             this.ktra_label_chuong.ForeColor = System.Drawing.Color.Red;
             this.ktra_label_chuong.Location = new System.Drawing.Point(64, 75);
             this.ktra_label_chuong.Name = "ktra_label_chuong";
-            this.ktra_label_chuong.Size = new System.Drawing.Size(77, 17);
+            this.ktra_label_chuong.Size = new System.Drawing.Size(71, 16);
             this.ktra_label_chuong.TabIndex = 19;
             this.ktra_label_chuong.Text = "Chương 1";
             this.ktra_label_chuong.Visible = false;
@@ -434,62 +494,8 @@
             this.ktra_label_2.TabIndex = 20;
             this.ktra_label_2.Text = "Ôn tập và bổ sung về phân số. \r\nGiải toán liên quan đến tỉ lệ. \r\nBảng đơn vị đo d" +
     "iện tích";
-            this.ktra_label_2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.ktra_label_2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.ktra_label_2.Visible = false;
-            // 
-            // pictureBoxExitpanel
-            // 
-            this.pictureBoxExitpanel.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBoxExitpanel.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBoxExitpanel.BackgroundImage")));
-            this.pictureBoxExitpanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBoxExitpanel.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBoxExitpanel.Location = new System.Drawing.Point(1499, 3);
-            this.pictureBoxExitpanel.Name = "pictureBoxExitpanel";
-            this.pictureBoxExitpanel.Size = new System.Drawing.Size(81, 82);
-            this.pictureBoxExitpanel.TabIndex = 21;
-            this.pictureBoxExitpanel.TabStop = false;
-            this.pictureBoxExitpanel.Click += new System.EventHandler(this.pictureBoxExitpanel_Click);
-            // 
-            // panelScore
-            // 
-            this.panelScore.Controls.Add(this.button1);
-            this.panelScore.Controls.Add(this.labelScore);
-            this.panelScore.Controls.Add(this.label2);
-            this.panelScore.Location = new System.Drawing.Point(470, 18);
-            this.panelScore.Name = "panelScore";
-            this.panelScore.Size = new System.Drawing.Size(750, 430);
-            this.panelScore.TabIndex = 22;
-            this.panelScore.Visible = false;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(118, 77);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(161, 39);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "Kết quả: ";
-            // 
-            // labelScore
-            // 
-            this.labelScore.AutoSize = true;
-            this.labelScore.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelScore.Location = new System.Drawing.Point(412, 77);
-            this.labelScore.Name = "labelScore";
-            this.labelScore.Size = new System.Drawing.Size(161, 39);
-            this.labelScore.TabIndex = 1;
-            this.labelScore.Text = "Kết quả: ";
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(250, 250);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(202, 74);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "Thoát";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Form_kiemtra
             // 
@@ -514,7 +520,6 @@
             this.Controls.Add(this.ktra_button_chuong1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximumSize = new System.Drawing.Size(1600, 800);
             this.MinimumSize = new System.Drawing.Size(1600, 800);
@@ -525,6 +530,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.ktra_pictureBox_back)).EndInit();
             this.ktra_panel_kiemtra.ResumeLayout(false);
             this.ktra_panel_kiemtra.PerformLayout();
+            this.panelScore.ResumeLayout(false);
+            this.panelScore.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxExitpanel)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxQues)).EndInit();
@@ -534,9 +542,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAns)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ktra_pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxExitpanel)).EndInit();
-            this.panelScore.ResumeLayout(false);
-            this.panelScore.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
