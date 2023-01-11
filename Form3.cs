@@ -20,6 +20,10 @@ namespace doancuoiki
             dt = row;
         }
         int num_page;
+        int flag_de = 0;
+        int timePlay = 2700;
+        string[] strdapan = new string[99];
+        string[] strtraloi = new string[99];
         DataProvider provider = new DataProvider();
         private void de45p_dethi_trove_Click(object sender, EventArgs e)
         {
@@ -28,10 +32,6 @@ namespace doancuoiki
             de45p_dethi_cmtcamnghi.Text = "";
             flowLayoutPanelXephang.Controls.Clear();
         }
-        int flag_de = 0;
-        int timePlay = 2700;
-        string[] strdapan = new string[99];
-        string[] strtraloi = new string[99];
         private void Dapan(int flag)
         {
             string path = Application.StartupPath + "\\Thi\\De" + flag.ToString();
@@ -138,6 +138,10 @@ namespace doancuoiki
         private void button2_Click(object sender, EventArgs e)
         {
             de45p_panel_thi.Visible = false;
+            timer1.Stop();
+            timePlay = 2700;
+            label44.Text = "45:00";
+
         }
 
         private void de45p_pictureBox_back_Click(object sender, EventArgs e)
@@ -284,6 +288,7 @@ namespace doancuoiki
         {
             Check();
             timer1.Stop();
+            label44.Text = "45:00";
             labelResult.Text = chamdiem().ToString();
             panelResult.Visible = true;
             labelTime.Text = ((2700-timePlay)/60).ToString()+":"+ ((2700 - timePlay) % 60).ToString();
