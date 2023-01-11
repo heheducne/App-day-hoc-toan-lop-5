@@ -31,6 +31,7 @@ namespace doancuoiki
             de45p_dethi_cmthoten.Text = "";
             de45p_dethi_cmtcamnghi.Text = "";
             flowLayoutPanelXephang.Controls.Clear();
+            flowLayoutPanelXephang.Visible = false;
         }
         private void Dapan(int flag)
         {
@@ -53,6 +54,7 @@ namespace doancuoiki
             de45p_panel_dethi.Visible = true;
             AddCamNghi(flag_de);
             xephang(flag_de);
+            flowLayoutPanelXephang.Visible = true;
         }
 
         private void de45p_button_de2_Click(object sender, EventArgs e)
@@ -66,6 +68,7 @@ namespace doancuoiki
             de45p_panel_dethi.Visible = true;
             AddCamNghi(flag_de);
             xephang(flag_de);
+            flowLayoutPanelXephang.Visible = true;
         }
 
         private void de45p_button_de3_Click(object sender, EventArgs e)
@@ -79,6 +82,7 @@ namespace doancuoiki
             de45p_panel_dethi.Visible = true;
             AddCamNghi(flag_de);
             xephang(flag_de);
+            flowLayoutPanelXephang.Visible = true;
         }
 
         private void de45p_button_de4_Click(object sender, EventArgs e)
@@ -92,6 +96,7 @@ namespace doancuoiki
             de45p_panel_dethi.Visible = true;
             AddCamNghi(flag_de);
             xephang(flag_de);
+            flowLayoutPanelXephang.Visible = true;
         }
 
         private void de45p_button_de5_Click(object sender, EventArgs e)
@@ -105,6 +110,7 @@ namespace doancuoiki
             de45p_panel_dethi.Visible = true;
             AddCamNghi(flag_de);
             xephang(flag_de);
+            flowLayoutPanelXephang.Visible = true;
         }
 
         private void de45p_button_de6_Click(object sender, EventArgs e)
@@ -118,6 +124,7 @@ namespace doancuoiki
             de45p_panel_dethi.Visible = true;
             AddCamNghi(flag_de);
             xephang(flag_de);
+            flowLayoutPanelXephang.Visible = true;
         }
 
         private void de45p_dethi_start_Click(object sender, EventArgs e)
@@ -128,6 +135,7 @@ namespace doancuoiki
             timer1.Start();
             Dapan(flag_de);
             AddPage(flag_de);
+            flowLayoutPanelXephang.Visible = false;
 
         }
         private void AddPage(int flag)
