@@ -2370,10 +2370,10 @@
             // lythuyet_baihoc
             // 
             this.lythuyet_baihoc.AutoSize = true;
-            this.lythuyet_baihoc.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lythuyet_baihoc.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lythuyet_baihoc.Location = new System.Drawing.Point(12, 85);
             this.lythuyet_baihoc.Name = "lythuyet_baihoc";
-            this.lythuyet_baihoc.Size = new System.Drawing.Size(0, 18);
+            this.lythuyet_baihoc.Size = new System.Drawing.Size(0, 22);
             this.lythuyet_baihoc.TabIndex = 6;
             this.lythuyet_baihoc.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
