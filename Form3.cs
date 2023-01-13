@@ -344,6 +344,7 @@ namespace doancuoiki
             lblName.AutoSize = true;
             lblName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             lblName.Name = "label48";
+            lblName.ForeColor = Color.MediumSlateBlue;
             lblName.Size = new System.Drawing.Size(74, 25);
             lblName.TabIndex = 0;
             lblName.Text = dt[1].ToString();
@@ -352,6 +353,7 @@ namespace doancuoiki
             lblClass.AutoSize = true;
             lblClass.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             lblClass.Name = "label50";
+            lblClass.ForeColor = Color.MediumSlateBlue;
             lblClass.Size = new System.Drawing.Size(79, 25);
             lblClass.TabIndex = 1;
             lblClass.Text = dt[2].ToString();
@@ -360,6 +362,7 @@ namespace doancuoiki
             lblSchool.AutoSize = true;
             lblSchool.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             lblSchool.Name = "label51";
+            lblSchool .ForeColor = Color.MediumSlateBlue;
             lblSchool.Size = new System.Drawing.Size(74, 25);
             lblSchool.TabIndex = 2;
             lblSchool.Text = dt[3].ToString();
@@ -368,6 +371,7 @@ namespace doancuoiki
             tmp.AutoSize = true;
             tmp.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             tmp.Name = "label52";
+            tmp.ForeColor = Color.MediumSlateBlue;
             tmp.Size = new System.Drawing.Size(68, 25);
             tmp.TabIndex = 3;
             tmp.Text = "Điểm:";
@@ -376,6 +380,7 @@ namespace doancuoiki
             lblScore.AutoSize = true;
             lblScore.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             lblScore.Name = "label54";
+            lblScore.ForeColor = Color.MediumSlateBlue;
             lblScore.Size = new System.Drawing.Size(36, 25);
             lblScore.TabIndex = 5;
             lblScore.Text = dt[4].ToString();
@@ -385,6 +390,7 @@ namespace doancuoiki
             lblTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             lblTime.Name = "label53";
             lblTime.Size = new System.Drawing.Size(67, 25);
+            lblTime.ForeColor = Color.MediumSlateBlue;
             lblTime.TabIndex = 4;
             lblTime.Text = dt[5].ToString();
             //pnl
@@ -397,8 +403,9 @@ namespace doancuoiki
             pnl.Controls.Add(tmp);
             pnl.Location = new System.Drawing.Point(3, 3);
             pnl.Name = "panel3";
+            pnl.BackColor = Color.White;
             pnl.BorderStyle = BorderStyle.FixedSingle;
-            pnl.Size = new System.Drawing.Size(477, 125);
+            pnl.Size = new System.Drawing.Size(350, 125);
             pnl.TabIndex = 0;
             lblName.Location = new System.Drawing.Point(28, 18);
             lblClass.Location = new System.Drawing.Point(130, 18);

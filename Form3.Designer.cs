@@ -72,6 +72,7 @@
             this.de45p_dethi_made = new System.Windows.Forms.Label();
             this.de45p_panel_thi = new System.Windows.Forms.Panel();
             this.panelResult = new System.Windows.Forms.Panel();
+            this.de45p_label_realtime = new System.Windows.Forms.Label();
             this.labelTime = new System.Windows.Forms.Label();
             this.buttonOK = new System.Windows.Forms.Button();
             this.label49 = new System.Windows.Forms.Label();
@@ -153,7 +154,8 @@
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.flowLayoutPanelXephang = new System.Windows.Forms.FlowLayoutPanel();
             this.label2 = new System.Windows.Forms.Label();
-            this.de45p_label_realtime = new System.Windows.Forms.Label();
+            this.button5 = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.de45p_panel_dethi.SuspendLayout();
@@ -740,6 +742,7 @@
             // 
             this.panelResult.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panelResult.BackgroundImage")));
             this.panelResult.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panelResult.Controls.Add(this.button5);
             this.panelResult.Controls.Add(this.de45p_label_realtime);
             this.panelResult.Controls.Add(this.labelTime);
             this.panelResult.Controls.Add(this.buttonOK);
@@ -751,6 +754,17 @@
             this.panelResult.Size = new System.Drawing.Size(764, 621);
             this.panelResult.TabIndex = 73;
             this.panelResult.Visible = false;
+            // 
+            // de45p_label_realtime
+            // 
+            this.de45p_label_realtime.AutoSize = true;
+            this.de45p_label_realtime.BackColor = System.Drawing.Color.Transparent;
+            this.de45p_label_realtime.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.de45p_label_realtime.Location = new System.Drawing.Point(230, 383);
+            this.de45p_label_realtime.Name = "de45p_label_realtime";
+            this.de45p_label_realtime.Size = new System.Drawing.Size(150, 32);
+            this.de45p_label_realtime.TabIndex = 5;
+            this.de45p_label_realtime.Text = "Thời gian:";
             // 
             // labelTime
             // 
@@ -768,7 +782,7 @@
             // 
             this.buttonOK.BackColor = System.Drawing.Color.PaleGreen;
             this.buttonOK.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonOK.Location = new System.Drawing.Point(320, 504);
+            this.buttonOK.Location = new System.Drawing.Point(488, 504);
             this.buttonOK.Name = "buttonOK";
             this.buttonOK.Size = new System.Drawing.Size(147, 84);
             this.buttonOK.TabIndex = 3;
@@ -1522,16 +1536,27 @@
             this.label2.Text = "Lựa chọn một\r\nđề thi để xem \r\nxếp hạng";
             this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // de45p_label_realtime
+            // button5
             // 
-            this.de45p_label_realtime.AutoSize = true;
-            this.de45p_label_realtime.BackColor = System.Drawing.Color.Transparent;
-            this.de45p_label_realtime.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.de45p_label_realtime.Location = new System.Drawing.Point(230, 383);
-            this.de45p_label_realtime.Name = "de45p_label_realtime";
-            this.de45p_label_realtime.Size = new System.Drawing.Size(150, 32);
-            this.de45p_label_realtime.TabIndex = 5;
-            this.de45p_label_realtime.Text = "Thời gian:";
+            this.button5.BackColor = System.Drawing.Color.PaleGreen;
+            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button5.Location = new System.Drawing.Point(154, 504);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(176, 84);
+            this.button5.TabIndex = 6;
+            this.button5.Text = "Gửi kết quả\r\nkiểm tra vào\r\ngmail";
+            this.button5.UseVisualStyleBackColor = false;
+            // 
+            // button6
+            // 
+            this.button6.BackColor = System.Drawing.Color.Bisque;
+            this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button6.Location = new System.Drawing.Point(960, 226);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(151, 495);
+            this.button6.TabIndex = 18;
+            this.button6.Text = "BẠN\r\nMUỐN\r\nTHÊM\r\nĐỀ\r\nTHI\r\n?";
+            this.button6.UseVisualStyleBackColor = false;
             // 
             // Form_luyentap
             // 
@@ -1541,6 +1566,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1600, 800);
             this.Controls.Add(this.de45p_panel_thi);
+            this.Controls.Add(this.button6);
             this.Controls.Add(this.flowLayoutPanelXephang);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.de45p_panel_dethi);
@@ -1702,5 +1728,7 @@
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanelXephang;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label de45p_label_realtime;
+        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button button6;
     }
 }
