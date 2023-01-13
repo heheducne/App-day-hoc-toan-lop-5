@@ -1,14 +1,18 @@
 ﻿CREATE DATABASE LEARNING
 USE LEARNING
+---------------chạy hết code dưới này
+DROP TABLE ACCOUNT
 CREATE TABLE ACCOUNT(
-ID INT NOT NULL IDENTITY(1,1) PRIMARY KEY,
-NAME_STUDENT VARCHAR(255),
+TDN NVARCHAR(255) NOT NULL PRIMARY KEY,
+NAME_STUDENT NVARCHAR(255),
 CLASS VARCHAR(255),
-SCHOOL VARCHAR(255)
+SCHOOL VARCHAR(255),
+PASS VARCHAR(255) NOT NULL,
+CATE INT NOT NULL
 )
 select * from dbo.ACCOUNT
 
-
+------đừng chạy code dưới
 ------------chạy hết code dưới mới chạy dc app
 ------------chạy hết code dưới mới chạy dc app
 ------------chạy hết code dưới mới chạy dc app

@@ -15,50 +15,57 @@ namespace doancuoiki
     {
         DataProvider provider = new DataProvider();
         Form_lythuyet f1 = new Form_lythuyet();
-        DataTable dt;
-        DataRow row;
+        DataRow info;
         public Form_main()
         {
             InitializeComponent();
-            cbAdd();
-        }
-        private void cbAdd()
-        {
-            main_comboBox_ho_va_ten.Items.Clear();
-            dt = provider.excuteQuery("SELECT * FROM dbo.ACCOUNT");
-            foreach (DataRow row in dt.Rows)
-            {
-                main_comboBox_ho_va_ten.Items.Add(row[1].ToString());
-            }
         }
         //button chưa có thông tin
-        private void button2_Click(object sender, EventArgs e)
+        private void button3_Click(object sender, EventArgs e)
         {
-            main_panel_taohocsinhmoi.Visible = true;
-            main_textBox_ten.Text = "";
-            main_textBox_lop.Text = "";
-            main_textBox_truong.Text = "";
-            main_panel_ho_va_ten.Visible = false;
-        }
-        //button đồng ý tạo học sinh mới
-        private void button1_Click(object sender, EventArgs e)
-        {
-            if (main_textBox_lop.Text == "" || main_textBox_ten.Text == "" || main_textBox_truong.Text == "")
+            if (textBoxAccount.Text == "" || textBoxPass.Text == "" || textBoxPass2.Text == "" || textBoxName.Text == "" || comboBoxCate.Text == "" || textBoxClass.Text == "" || textBoxSchool.Text == "")
             {
-                MessageBox.Show("Vui long nhap du thong tin");
+                MessageBox.Show("Vui long nhap day du thong tin");
             }
             else
             {
-                main_panel_taohocsinhmoi.Visible = false;
-                main_panel_ho_va_ten.Visible = true;
-                string sqlcmd = "INSERT INTO dbo.ACCOUNT (NAME_STUDENT,CLASS,SCHOOL)  VALUES ('"+main_textBox_ten.Text+
-                                   "', '"+main_textBox_lop.Text+
-                                   "', '"+main_textBox_truong.Text+"');";
-                //MessageBox.Show(sqlcmd);
-                provider.excuteNonquery(sqlcmd);
-                MessageBox.Show("Them hoc sinh thanh cong");
-                cbAdd();
+                int cate = 0;
+                DataTable dt = provider.excuteQuery("SELECT * FROM dbo.ACCOUNT");
+                bool tmp = dt.AsEnumerable().Any(row => textBoxAccount.Text == row.Field<String>("TDN"));
+                if (tmp == true) { MessageBox.Show("Tên đăng nhập đã tồn tại"); }
+                else if (textBoxPass.Text != textBoxPass2.Text) { MessageBox.Show("Mật khẩu không khớp"); }
+                else
+                {
+                    if (comboBoxCate.Text == "Admin")
+                    {
+                        if (textBoxCheck.Text != "Admin") { MessageBox.Show("Mã xác thực không đúng"); }
+                        else { cate = 1; }
+                    }
+                    if ((comboBoxCate.Text == "Admin" && cate == 1) || comboBoxCate.Text != "Admin")
+                    {
+                        main_panel_taohocsinhmoi.Visible = false;
+                        main_panel_ho_va_ten.Visible = true;
+                        string sqlcmd = "INSERT INTO dbo.ACCOUNT (TDN, NAME_STUDENT,CLASS,SCHOOL,PASS,CATE)  VALUES ('" + textBoxAccount.Text + "','" + textBoxAccount.Text +
+                                           "', '" + textBoxClass.Text +
+                                           "', '" + textBoxSchool.Text + "','" + textBoxPass.Text + "','" + cate.ToString() + "');";
+                        //MessageBox.Show(sqlcmd);
+                        provider.excuteNonquery(sqlcmd);
+                        MessageBox.Show("Dang ki thanh vien thanh cong");
+                    }
+                }
             }
+        }
+        private void button2_Click(object sender, EventArgs e)
+        {
+            main_panel_taohocsinhmoi.Visible = true;
+            main_panel_ho_va_ten.Visible = false;
+            textBoxAccount.Text = "";
+            textBoxPass.Text = "";
+            textBoxPass2.Text = "";
+            textBoxName.Text = "";
+            textBoxClass.Text = "";
+            textBoxSchool.Text = "";
+            textBoxSchool.Text = "";
         }
         //button hiện form lý thuyết
         private void main_pictureBox_lythuyet_Click(object sender, EventArgs e)
@@ -71,7 +78,7 @@ namespace doancuoiki
         private void main_pictureBox_luyentap_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Form_luyentap f4 = new Form_luyentap(row);
+            Form_luyentap f4 = new Form_luyentap(info);
             f4.ShowDialog();
             this.Show();
         }
@@ -82,13 +89,6 @@ namespace doancuoiki
             main_panel_ho_va_ten.Visible = true;
         }
 
-        private void main_comboBox_ho_va_ten_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            string sqlcmd = "SELECT * FROM dbo.ACCOUNT WHERE NAME_STUDENT = '"+main_comboBox_ho_va_ten.Text+"'";
-            row = provider.excuteQuery(sqlcmd).Rows[0];
-            main_label_lop.Text = row[3].ToString();
-            main_label_truong.Text = row[2].ToString();
-        }
 
         private void main_pictureBox_kiemtra_Click(object sender, EventArgs e)
         {
@@ -100,28 +100,38 @@ namespace doancuoiki
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-            if (main_comboBox_ho_va_ten.Text == "")
+            if (main_comboBox_ho_va_ten.Text == ""||main_comboBox_ho_va_ten.Text=="")
             {
-                MessageBox.Show("Vui long chon hoc sinh");
+                MessageBox.Show("Vui long điền đủ thông tin");
             }
-            else
-            {
-                label7.Visible = true;
-                label8.Visible = true;
-                label9.Visible = true;
+            else {
+                string sqlcmd = "SELECT * FROM dbo.ACCOUNT WHERE TDN ='" + main_comboBox_ho_va_ten.Text + "' AND PASS='" +textBox1.Text + "'";
+                //MessageBox.Show(sqlcmd);
+                DataTable dt = provider.excuteQuery(sqlcmd);
+                if (dt.Rows.Count == 0)
+                {
+                    MessageBox.Show("Sai tài khoản hoặc mật khẩu");
+                }
+                else
+                {
+                    info = dt.Rows[0];
+                    label7.Visible = true;
+                    label8.Visible = true;
+                    label9.Visible = true;
 
-                main_pictureBox_kiemtra.Visible = true;
-                main_pictureBox_luyentap.Visible = true;
-                main_pictureBox_lythuyet.Visible = true;
+                    main_pictureBox_kiemtra.Visible = true;
+                    main_pictureBox_luyentap.Visible = true;
+                    main_pictureBox_lythuyet.Visible = true;
 
-                main_panel_taohocsinhmoi.Visible = false;
-                main_panel_ho_va_ten.Visible = false;
+                    main_panel_taohocsinhmoi.Visible = false;
+                    main_panel_ho_va_ten.Visible = false;
 
-                main_pictureBox_bear1.Visible = true;
-                main_pictureBox_bear2.Visible = true;
-                main_pictureBox_bear3.Visible = true;
+                    main_pictureBox_bear1.Visible = true;
+                    main_pictureBox_bear2.Visible = true;
+                    main_pictureBox_bear3.Visible = true;
 
-                main_pictureBox_user.Visible = true;
+                    main_pictureBox_user.Visible = true;
+                }
             }
         }
 
@@ -152,6 +162,22 @@ namespace doancuoiki
         private void main_pictureBox_info_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Sinh viên thực hiện:\r\n Bùi Hữu Đức - 20520449\r\n Cao Khắc Tuân - 20520841\r\n JAN-2023","Thông tin",MessageBoxButtons.OK,MessageBoxIcon.Information);
+        }
+
+        private void label14_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            main_panel_taohocsinhmoi.Visible = false;
+            main_panel_ho_va_ten.Visible = true;
+        }
+
+        private void buttonQuenMatKhau_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -1,0 +1,2 @@
+ACCOUNT tdn, tên, class, school, mật khẩu, tư cách
+540, 15
