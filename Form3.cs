@@ -31,6 +31,7 @@ namespace doancuoiki
             de45p_dethi_cmthoten.Text = "";
             de45p_dethi_cmtcamnghi.Text = "";
             flowLayoutPanelXephang.Controls.Clear();
+            flowLayoutPanelXephang.Visible = false;
         }
         private void Dapan(int flag)
         {
@@ -53,6 +54,7 @@ namespace doancuoiki
             de45p_panel_dethi.Visible = true;
             AddCamNghi(flag_de);
             xephang(flag_de);
+            flowLayoutPanelXephang.Visible = true;
         }
 
         private void de45p_button_de2_Click(object sender, EventArgs e)
@@ -66,6 +68,7 @@ namespace doancuoiki
             de45p_panel_dethi.Visible = true;
             AddCamNghi(flag_de);
             xephang(flag_de);
+            flowLayoutPanelXephang.Visible = true;
         }
 
         private void de45p_button_de3_Click(object sender, EventArgs e)
@@ -79,6 +82,7 @@ namespace doancuoiki
             de45p_panel_dethi.Visible = true;
             AddCamNghi(flag_de);
             xephang(flag_de);
+            flowLayoutPanelXephang.Visible = true;
         }
 
         private void de45p_button_de4_Click(object sender, EventArgs e)
@@ -92,6 +96,7 @@ namespace doancuoiki
             de45p_panel_dethi.Visible = true;
             AddCamNghi(flag_de);
             xephang(flag_de);
+            flowLayoutPanelXephang.Visible = true;
         }
 
         private void de45p_button_de5_Click(object sender, EventArgs e)
@@ -105,6 +110,7 @@ namespace doancuoiki
             de45p_panel_dethi.Visible = true;
             AddCamNghi(flag_de);
             xephang(flag_de);
+            flowLayoutPanelXephang.Visible = true;
         }
 
         private void de45p_button_de6_Click(object sender, EventArgs e)
@@ -118,6 +124,7 @@ namespace doancuoiki
             de45p_panel_dethi.Visible = true;
             AddCamNghi(flag_de);
             xephang(flag_de);
+            flowLayoutPanelXephang.Visible = true;
         }
 
         private void de45p_dethi_start_Click(object sender, EventArgs e)
@@ -128,6 +135,7 @@ namespace doancuoiki
             timer1.Start();
             Dapan(flag_de);
             AddPage(flag_de);
+            flowLayoutPanelXephang.Visible = false;
 
         }
         private void AddPage(int flag)
@@ -293,6 +301,8 @@ namespace doancuoiki
             panelResult.Visible = true;
             labelTime.Text = ((2700-timePlay)/60).ToString()+":"+ ((2700 - timePlay) % 60).ToString();
             timePlay = 2700;
+            DateTime n = DateTime.Now;
+            de45p_label_realtime.Text = n.ToString();
             re();
         }
         private void button1_Click(object sender, EventArgs e)
@@ -334,6 +344,7 @@ namespace doancuoiki
             lblName.AutoSize = true;
             lblName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             lblName.Name = "label48";
+            lblName.ForeColor = Color.MediumSlateBlue;
             lblName.Size = new System.Drawing.Size(74, 25);
             lblName.TabIndex = 0;
             lblName.Text = dt[1].ToString();
@@ -342,6 +353,7 @@ namespace doancuoiki
             lblClass.AutoSize = true;
             lblClass.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             lblClass.Name = "label50";
+            lblClass.ForeColor = Color.MediumSlateBlue;
             lblClass.Size = new System.Drawing.Size(79, 25);
             lblClass.TabIndex = 1;
             lblClass.Text = dt[2].ToString();
@@ -350,6 +362,7 @@ namespace doancuoiki
             lblSchool.AutoSize = true;
             lblSchool.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             lblSchool.Name = "label51";
+            lblSchool .ForeColor = Color.MediumSlateBlue;
             lblSchool.Size = new System.Drawing.Size(74, 25);
             lblSchool.TabIndex = 2;
             lblSchool.Text = dt[3].ToString();
@@ -358,6 +371,7 @@ namespace doancuoiki
             tmp.AutoSize = true;
             tmp.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             tmp.Name = "label52";
+            tmp.ForeColor = Color.MediumSlateBlue;
             tmp.Size = new System.Drawing.Size(68, 25);
             tmp.TabIndex = 3;
             tmp.Text = "Điểm:";
@@ -366,6 +380,7 @@ namespace doancuoiki
             lblScore.AutoSize = true;
             lblScore.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             lblScore.Name = "label54";
+            lblScore.ForeColor = Color.MediumSlateBlue;
             lblScore.Size = new System.Drawing.Size(36, 25);
             lblScore.TabIndex = 5;
             lblScore.Text = dt[4].ToString();
@@ -375,6 +390,7 @@ namespace doancuoiki
             lblTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             lblTime.Name = "label53";
             lblTime.Size = new System.Drawing.Size(67, 25);
+            lblTime.ForeColor = Color.MediumSlateBlue;
             lblTime.TabIndex = 4;
             lblTime.Text = dt[5].ToString();
             //pnl
@@ -387,8 +403,9 @@ namespace doancuoiki
             pnl.Controls.Add(tmp);
             pnl.Location = new System.Drawing.Point(3, 3);
             pnl.Name = "panel3";
+            pnl.BackColor = Color.White;
             pnl.BorderStyle = BorderStyle.FixedSingle;
-            pnl.Size = new System.Drawing.Size(477, 125);
+            pnl.Size = new System.Drawing.Size(350, 125);
             pnl.TabIndex = 0;
             lblName.Location = new System.Drawing.Point(28, 18);
             lblClass.Location = new System.Drawing.Point(130, 18);

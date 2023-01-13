@@ -66,6 +66,7 @@ namespace doancuoiki
                 AddQues(num_ques);
                 ktra_label_conclude2.Visible = false;
                 ktra_label_2.Visible = false;
+                ktra_pictureBox_back.Visible = false;
             }
         }
         private void AddQues(int tmp)
@@ -193,8 +194,7 @@ namespace doancuoiki
                 if (num_ques > 20)
                 {
                     panelScore.Visible = true;
-                    labelScore.Text = chamdiem().ToString()+"/20";
-
+                    labelScore.Text = chamdiem().ToString()+"/20";               
                 }
                 else { AddQues(num_ques); }
             }
@@ -225,6 +225,7 @@ namespace doancuoiki
             ktra_label_conclude2.Visible = true;
             ktra_label_2.Visible = true;
             num_ques = 1;
+            ktra_pictureBox_back.Visible = true;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -234,6 +235,7 @@ namespace doancuoiki
             ktra_label_2.Visible = true;
             num_ques = 1;
             panelScore.Visible = false;
+            ktra_pictureBox_back.Visible = true;
         }
     }
 }

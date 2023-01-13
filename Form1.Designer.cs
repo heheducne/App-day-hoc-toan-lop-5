@@ -62,6 +62,12 @@
             this.main_pictureBox_bear1 = new System.Windows.Forms.PictureBox();
             this.main_pictureBox_bear2 = new System.Windows.Forms.PictureBox();
             this.main_pictureBox_bear3 = new System.Windows.Forms.PictureBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.label15 = new System.Windows.Forms.Label();
             this.main_panel_ho_va_ten.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.main_pictureBox_luyentap)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.main_pictureBox_lythuyet)).BeginInit();
@@ -80,6 +86,8 @@
             this.main_panel_ho_va_ten.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("main_panel_ho_va_ten.BackgroundImage")));
             this.main_panel_ho_va_ten.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.main_panel_ho_va_ten.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.main_panel_ho_va_ten.Controls.Add(this.textBox1);
+            this.main_panel_ho_va_ten.Controls.Add(this.label10);
             this.main_panel_ho_va_ten.Controls.Add(this.main_button_ok);
             this.main_panel_ho_va_ten.Controls.Add(this.label4);
             this.main_panel_ho_va_ten.Controls.Add(this.button2);
@@ -91,7 +99,7 @@
             this.main_panel_ho_va_ten.Controls.Add(this.label1);
             this.main_panel_ho_va_ten.Location = new System.Drawing.Point(540, 197);
             this.main_panel_ho_va_ten.Name = "main_panel_ho_va_ten";
-            this.main_panel_ho_va_ten.Size = new System.Drawing.Size(550, 350);
+            this.main_panel_ho_va_ten.Size = new System.Drawing.Size(550, 446);
             this.main_panel_ho_va_ten.TabIndex = 0;
             this.main_panel_ho_va_ten.Visible = false;
             // 
@@ -99,7 +107,7 @@
             // 
             this.main_button_ok.BackColor = System.Drawing.Color.SpringGreen;
             this.main_button_ok.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.main_button_ok.Location = new System.Drawing.Point(447, 295);
+            this.main_button_ok.Location = new System.Drawing.Point(447, 391);
             this.main_button_ok.Name = "main_button_ok";
             this.main_button_ok.Size = new System.Drawing.Size(98, 50);
             this.main_button_ok.TabIndex = 14;
@@ -122,7 +130,7 @@
             // 
             this.button2.BackColor = System.Drawing.Color.PaleTurquoise;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(269, 295);
+            this.button2.Location = new System.Drawing.Point(269, 391);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(172, 50);
             this.button2.TabIndex = 8;
@@ -203,7 +211,7 @@
             this.label6.ForeColor = System.Drawing.Color.Gold;
             this.label6.Location = new System.Drawing.Point(200, 22);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(1200, 153);
+            this.label6.Size = new System.Drawing.Size(1187, 152);
             this.label6.TabIndex = 1;
             this.label6.Text = "HỌC TOÁN LỚP 5";
             // 
@@ -255,7 +263,7 @@
             this.label7.BackColor = System.Drawing.Color.White;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.MediumSlateBlue;
-            this.label7.Location = new System.Drawing.Point(685, 420);
+            this.label7.Location = new System.Drawing.Point(687, 413);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(262, 102);
             this.label7.TabIndex = 5;
@@ -271,7 +279,7 @@
             this.label8.ForeColor = System.Drawing.Color.MediumSlateBlue;
             this.label8.Location = new System.Drawing.Point(210, 407);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(229, 110);
+            this.label8.Size = new System.Drawing.Size(222, 108);
             this.label8.TabIndex = 6;
             this.label8.Text = "THI THỬ\r\n45 PHÚT";
             this.label8.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -283,11 +291,11 @@
             this.label9.BackColor = System.Drawing.Color.White;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.MediumSlateBlue;
-            this.label9.Location = new System.Drawing.Point(1167, 441);
+            this.label9.Location = new System.Drawing.Point(1145, 416);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(270, 102);
+            this.label9.Size = new System.Drawing.Size(270, 51);
             this.label9.TabIndex = 7;
-            this.label9.Text = "LUYỆN TẬP\r\n\r\n";
+            this.label9.Text = "LUYỆN TẬP";
             this.label9.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.label9.Visible = false;
             // 
@@ -308,6 +316,10 @@
             this.main_panel_taohocsinhmoi.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("main_panel_taohocsinhmoi.BackgroundImage")));
             this.main_panel_taohocsinhmoi.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.main_panel_taohocsinhmoi.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.main_panel_taohocsinhmoi.Controls.Add(this.textBox3);
+            this.main_panel_taohocsinhmoi.Controls.Add(this.label15);
+            this.main_panel_taohocsinhmoi.Controls.Add(this.textBox2);
+            this.main_panel_taohocsinhmoi.Controls.Add(this.label11);
             this.main_panel_taohocsinhmoi.Controls.Add(this.buttonExitAdd);
             this.main_panel_taohocsinhmoi.Controls.Add(this.main_textBox_lop);
             this.main_panel_taohocsinhmoi.Controls.Add(this.main_textBox_truong);
@@ -319,7 +331,7 @@
             this.main_panel_taohocsinhmoi.Controls.Add(this.label14);
             this.main_panel_taohocsinhmoi.Location = new System.Drawing.Point(540, 197);
             this.main_panel_taohocsinhmoi.Name = "main_panel_taohocsinhmoi";
-            this.main_panel_taohocsinhmoi.Size = new System.Drawing.Size(550, 350);
+            this.main_panel_taohocsinhmoi.Size = new System.Drawing.Size(550, 446);
             this.main_panel_taohocsinhmoi.TabIndex = 10;
             this.main_panel_taohocsinhmoi.Visible = false;
             // 
@@ -327,7 +339,7 @@
             // 
             this.buttonExitAdd.BackColor = System.Drawing.Color.Red;
             this.buttonExitAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonExitAdd.Location = new System.Drawing.Point(282, 294);
+            this.buttonExitAdd.Location = new System.Drawing.Point(282, 390);
             this.buttonExitAdd.Name = "buttonExitAdd";
             this.buttonExitAdd.Size = new System.Drawing.Size(88, 51);
             this.buttonExitAdd.TabIndex = 13;
@@ -374,7 +386,7 @@
             // 
             this.main_button_taohocsinhmoi.BackColor = System.Drawing.Color.SpringGreen;
             this.main_button_taohocsinhmoi.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.main_button_taohocsinhmoi.Location = new System.Drawing.Point(376, 294);
+            this.main_button_taohocsinhmoi.Location = new System.Drawing.Point(376, 390);
             this.main_button_taohocsinhmoi.Name = "main_button_taohocsinhmoi";
             this.main_button_taohocsinhmoi.Size = new System.Drawing.Size(169, 51);
             this.main_button_taohocsinhmoi.TabIndex = 8;
@@ -445,9 +457,9 @@
             this.main_pictureBox_bear1.BackColor = System.Drawing.Color.Transparent;
             this.main_pictureBox_bear1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("main_pictureBox_bear1.BackgroundImage")));
             this.main_pictureBox_bear1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.main_pictureBox_bear1.Location = new System.Drawing.Point(157, 286);
+            this.main_pictureBox_bear1.Location = new System.Drawing.Point(147, 258);
             this.main_pictureBox_bear1.Name = "main_pictureBox_bear1";
-            this.main_pictureBox_bear1.Size = new System.Drawing.Size(335, 322);
+            this.main_pictureBox_bear1.Size = new System.Drawing.Size(350, 350);
             this.main_pictureBox_bear1.TabIndex = 13;
             this.main_pictureBox_bear1.TabStop = false;
             this.main_pictureBox_bear1.Visible = false;
@@ -457,9 +469,9 @@
             this.main_pictureBox_bear2.BackColor = System.Drawing.Color.Transparent;
             this.main_pictureBox_bear2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("main_pictureBox_bear2.BackgroundImage")));
             this.main_pictureBox_bear2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.main_pictureBox_bear2.Location = new System.Drawing.Point(649, 286);
+            this.main_pictureBox_bear2.Location = new System.Drawing.Point(649, 258);
             this.main_pictureBox_bear2.Name = "main_pictureBox_bear2";
-            this.main_pictureBox_bear2.Size = new System.Drawing.Size(335, 322);
+            this.main_pictureBox_bear2.Size = new System.Drawing.Size(350, 350);
             this.main_pictureBox_bear2.TabIndex = 14;
             this.main_pictureBox_bear2.TabStop = false;
             this.main_pictureBox_bear2.Visible = false;
@@ -469,12 +481,69 @@
             this.main_pictureBox_bear3.BackColor = System.Drawing.Color.Transparent;
             this.main_pictureBox_bear3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("main_pictureBox_bear3.BackgroundImage")));
             this.main_pictureBox_bear3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.main_pictureBox_bear3.Location = new System.Drawing.Point(1134, 286);
+            this.main_pictureBox_bear3.Location = new System.Drawing.Point(1116, 258);
             this.main_pictureBox_bear3.Name = "main_pictureBox_bear3";
-            this.main_pictureBox_bear3.Size = new System.Drawing.Size(335, 322);
+            this.main_pictureBox_bear3.Size = new System.Drawing.Size(350, 350);
             this.main_pictureBox_bear3.TabIndex = 15;
             this.main_pictureBox_bear3.TabStop = false;
             this.main_pictureBox_bear3.Visible = false;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.BackColor = System.Drawing.Color.Transparent;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(40, 293);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(154, 36);
+            this.label10.TabIndex = 15;
+            this.label10.Text = "Mật khẩu:";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.Location = new System.Drawing.Point(210, 293);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(277, 41);
+            this.textBox1.TabIndex = 16;
+            // 
+            // textBox2
+            // 
+            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox2.Location = new System.Drawing.Point(174, 276);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(269, 41);
+            this.textBox2.TabIndex = 15;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.BackColor = System.Drawing.Color.Transparent;
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(19, 281);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(154, 36);
+            this.label11.TabIndex = 14;
+            this.label11.Text = "Mật khẩu:";
+            // 
+            // textBox3
+            // 
+            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox3.Location = new System.Drawing.Point(174, 336);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(269, 41);
+            this.textBox3.TabIndex = 17;
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.BackColor = System.Drawing.Color.Transparent;
+            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.Location = new System.Drawing.Point(19, 341);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(152, 72);
+            this.label15.TabIndex = 16;
+            this.label15.Text = "Nhập lại\r\nmật khẩu:";
             // 
             // Form_main
             // 
@@ -559,6 +628,12 @@
         private System.Windows.Forms.PictureBox main_pictureBox_bear1;
         private System.Windows.Forms.PictureBox main_pictureBox_bear2;
         private System.Windows.Forms.PictureBox main_pictureBox_bear3;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Label label11;
     }
 }
 
