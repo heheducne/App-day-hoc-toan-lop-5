@@ -8,9 +8,11 @@ NAME_STUDENT NVARCHAR(255),
 CLASS VARCHAR(255),
 SCHOOL VARCHAR(255),
 PASS VARCHAR(255) NOT NULL,
-CATE INT NOT NULL
+CATE INT NOT NULL,
+EMAIL VARCHAR(255),
+IMAGE_PATH VARCHAR(255)
 )
-select * from dbo.ACCOUNT
+select * from dbo.ACCOUNT where TDN ='tuanct'
 
 ------đừng chạy code dưới
 ------------chạy hết code dưới mới chạy dc app
