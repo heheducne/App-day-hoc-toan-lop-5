@@ -148,7 +148,12 @@ namespace doancuoiki
             if (Int32.Parse(info[5].ToString()) == 1) { labelCate.Text = "Admin"; }
             else { labelCate.Text = "Thường"; }
             labelEmail.Text = info[6].ToString();
-            Bitmap pic = new Bitmap(info[7].ToString()); pictureBoxAvt.Image = pic;
+            using (FileStream stream = new FileStream(Application.StartupPath + "\\Avatar\\" + info[0].ToString() + ".jpg", FileMode.Open, FileAccess.Read))
+            {
+                pictureBoxAvt.Image = Image.FromStream(stream);
+                stream.Dispose();
+            }
+            //Bitmap pic = new Bitmap(info[7].ToString()); pictureBoxAvt.Image = pic;
         }
         private void main_pictureBox_start_Click(object sender, EventArgs e)
         {
@@ -320,7 +325,12 @@ namespace doancuoiki
 
         private void button7_Click(object sender, EventArgs e)
         {
-            Bitmap pic = new Bitmap(info[7].ToString()); pictureBoxChangeAvt.Image = pic;
+            //Bitmap pic = new Bitmap(info[7].ToString()); pictureBoxChangeAvt.Image = pic;
+            using (FileStream stream = new FileStream(Application.StartupPath + "\\Avatar\\" + info[0].ToString() + ".jpg", FileMode.Open, FileAccess.Read))
+            {
+                pictureBoxChangeAvt.Image = Image.FromStream(stream);
+                stream.Dispose();
+            }
             panelThongTin.Visible = false;
             panelDoiInfo.Visible = true;
             if (Int32.Parse(info[5].ToString()) == 1) { comboBoxNew.Text = "Admin"; }
@@ -346,7 +356,12 @@ namespace doancuoiki
             if (ord.ShowDialog() == System.Windows.Forms.DialogResult.OK)
             {
                 path = ord.FileName;
-                Bitmap pic = new Bitmap(path);pictureBoxChangeAvt.Image = pic;
+                //Bitmap pic = new Bitmap(path);pictureBoxChangeAvt.Image = pic;
+                using (FileStream stream = new FileStream(path, FileMode.Open, FileAccess.Read))
+                {
+                    pictureBoxChangeAvt.Image = Image.FromStream(stream);
+                    stream.Dispose();
+                }
             }
         }
 
@@ -374,10 +389,17 @@ namespace doancuoiki
                                        "', CLASS='" + NewClass +
                                        "', SCHOOL='" + NewSchool + "',CATE='" + cate.ToString() + "',EMAIL='" + NewEmail + "',IMAGE_PATH='" + Application.StartupPath + "\\Avatar\\" + info[0].ToString() + ".jpg'" +
                                        " WHERE TDN='" + info[0].ToString() + "';";
-                MessageBox.Show(sqlcmd);
+                //MessageBox.Show(sqlcmd);
                 provider.excuteNonquery(sqlcmd);
                 MessageBox.Show("Đôi thông tin thành công");
                 if (path != "") {
+                    using (FileStream stream = new FileStream(Application.StartupPath + "\\Avatar\\" + info[0].ToString() + ".jpg", FileMode.Open, FileAccess.Read))
+                    {
+                        pictureBoxChangeAvt.Image = Image.FromStream(stream);
+                        stream.Dispose();
+                    }
+                    File.Delete(Application.StartupPath + "\\Avatar\\" + info[0].ToString() + ".jpg");
+                    // delete your file.
                     File.Copy(path, Application.StartupPath + "\\Avatar\\" + info[0].ToString() + ".jpg"); path = ""; }
                 sqlcmd = "SELECT * FROM dbo.ACCOUNT WHERE TDN ='" + main_comboBox_ho_va_ten.Text + "' AND PASS='" + textBox1.Text + "'";
                 DataTable dt = provider.excuteQuery(sqlcmd);

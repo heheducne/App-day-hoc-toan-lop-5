@@ -264,7 +264,7 @@
             this.label6.ForeColor = System.Drawing.Color.Gold;
             this.label6.Location = new System.Drawing.Point(200, 22);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(1187, 152);
+            this.label6.Size = new System.Drawing.Size(1200, 153);
             this.label6.TabIndex = 1;
             this.label6.Text = "HỌC TOÁN LỚP 5";
             // 
@@ -332,7 +332,7 @@
             this.label8.ForeColor = System.Drawing.Color.MediumSlateBlue;
             this.label8.Location = new System.Drawing.Point(210, 407);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(222, 108);
+            this.label8.Size = new System.Drawing.Size(229, 110);
             this.label8.TabIndex = 6;
             this.label8.Text = "THI THỬ\r\n45 PHÚT";
             this.label8.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -930,7 +930,7 @@
             this.label26.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label26.Location = new System.Drawing.Point(27, 150);
             this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(100, 32);
+            this.label26.Size = new System.Drawing.Size(101, 32);
             this.label26.TabIndex = 29;
             this.label26.Text = "Email:";
             // 
@@ -950,7 +950,7 @@
             this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label16.Location = new System.Drawing.Point(27, 87);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(227, 32);
+            this.label16.Size = new System.Drawing.Size(228, 32);
             this.label16.TabIndex = 27;
             this.label16.Text = "Tên đăng nhập:";
             // 
@@ -982,7 +982,7 @@
             this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label15.Location = new System.Drawing.Point(21, 395);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(204, 64);
+            this.label15.Size = new System.Drawing.Size(205, 64);
             this.label15.TabIndex = 6;
             this.label15.Text = "Nhắc lại\r\nmật khẩu mới:\r\n";
             // 
@@ -1004,7 +1004,7 @@
             this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label14.Location = new System.Drawing.Point(21, 333);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(204, 32);
+            this.label14.Size = new System.Drawing.Size(205, 32);
             this.label14.TabIndex = 4;
             this.label14.Text = "Mật khẩu mới:";
             // 
@@ -1026,7 +1026,7 @@
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(21, 267);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(187, 32);
+            this.label5.Size = new System.Drawing.Size(188, 32);
             this.label5.TabIndex = 2;
             this.label5.Text = "Mật khẩu cũ:";
             // 
@@ -1103,7 +1103,7 @@
             this.label29.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label29.Location = new System.Drawing.Point(7, 210);
             this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(204, 64);
+            this.label29.Size = new System.Drawing.Size(205, 64);
             this.label29.TabIndex = 6;
             this.label29.Text = "Nhắc lại\r\nmật khẩu mới:\r\n";
             // 
@@ -1124,7 +1124,7 @@
             this.label30.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label30.Location = new System.Drawing.Point(7, 148);
             this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(204, 32);
+            this.label30.Size = new System.Drawing.Size(205, 32);
             this.label30.TabIndex = 4;
             this.label30.Text = "Mật khẩu mới:";
             // 
@@ -1145,7 +1145,7 @@
             this.label31.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label31.Location = new System.Drawing.Point(7, 82);
             this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(187, 32);
+            this.label31.Size = new System.Drawing.Size(188, 32);
             this.label31.TabIndex = 2;
             this.label31.Text = "Mật khẩu cũ:";
             // 
