@@ -1,2 +1,20 @@
-ACCOUNT tdn, tên, class, school, mật khẩu, tư cách
-540, 15
+ACCOUNT tdn, tên, class, school, mật khẩu, tư cách,email
+panelThongTin 465, 116
+
+
+ label7.Visible = false;
+            label8.Visible = false;
+            label9.Visible = false;
+
+            main_pictureBox_kiemtra.Visible = false;
+            main_pictureBox_luyentap.Visible = false;
+            main_pictureBox_lythuyet.Visible = false;
+
+            main_panel_taohocsinhmoi.Visible = false;
+            main_panel_ho_va_ten.Visible = true;
+
+            main_pictureBox_bear1.Visible = false;
+            main_pictureBox_bear2.Visible = false;
+            main_pictureBox_bear3.Visible = false;
+
+textBoxNewPass.Text == info[4].ToString()) { MessageBox.Show("Mật khẩu mới trùng với mật khẩu cũ"); }
