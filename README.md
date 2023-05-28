@@ -59,7 +59,6 @@ This is my final project in C# at school
 
 About this project: 
 
-Shopping offline with lots of functions:
 - Learing
 - Testing
 - Evaluating
